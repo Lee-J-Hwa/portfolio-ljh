@@ -31,8 +31,9 @@ body {
 header {
   background: url(./image/HOME-bg.jpg) 50% no-repeat;
   display: grid;
-  height: 80vh;
+  height: 70vh;
   margin-bottom: 20vh;
+  grid-auto-rows: 2fr 1.5fr 1.5fr 2fr;
 }
 header span {
   text-indent: -9999px;
@@ -44,7 +45,7 @@ header span {
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 3px;
-  align-self: center;
+  align-self: flex-start;
 }
 .view-btn {
   font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
@@ -64,7 +65,7 @@ article {
     font-family: 'Pretendard', '맑은 고딕', '돋움', sans-serif;
     font-size: 2rem;
     text-align: center;
-    align-self: center;
+    align-self: flex-start;
   }
   header ul {
     display: none;
@@ -77,10 +78,32 @@ article {
     width: 30px;
     height: 2px;
     background-color: #fff;
-    justify-self: right;
     align-self: start;
     position: absolute;
-    top: 5%;
+    top: 4%; right:2%;
+    cursor: pointer;
+  }
+  span::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 30px auto;
+    position: absolute;
+    top: -20px;
+    cursor: pointer;
+  }
+  span::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 30px auto;
+    position: absolute;
+    top: -40px;
+    cursor: pointer;
   }
   /*** main ***/
   .arti-box1 {
@@ -141,7 +164,7 @@ article {
     margin-bottom: 10%;
   }
   .txt-box {
-    width: 250px;
+    width: 268px;
   }
   .arti-box2 p {
     font-family: 'Pretendard', '맑은 고딕', '돋움', sans-serif;
@@ -300,5 +323,37 @@ article {
   }
   figure figcaption p {
     margin-left: 1rem;
+  }
+  /*** footer ***/
+  footer {
+    background-color: #fc5240;
+    color: #fff;
+  }
+  footer img {
+    margin-left: 3%;
+    width: 60%;
+    margin-bottom: 10%;
+  }
+  footer dl {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-left: 3%;
+    margin-bottom: 10%;
+  }
+  footer dt {
+    margin-bottom: 5%;
+  }
+  .footer-btn a {
+    display: block;
+  }
+  .footer-btn {
+    margin: 3%;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  footer p {
+    text-indent: -9999px;
   }
 }
