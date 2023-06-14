@@ -502,10 +502,10 @@ article {
   /*** footer ***/
   footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   footer img {
-    width: 30%;
+    width: 70%;
   }
   .ft-box1 {
     width: 70%;
