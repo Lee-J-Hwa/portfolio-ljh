@@ -572,6 +572,9 @@ article {
     color: #fc5240;
     cursor: pointer;
   }
+  header img {
+    margin-left: 2.5%;
+  }
   span {
     top: 8.5%;
     right: 2%;
