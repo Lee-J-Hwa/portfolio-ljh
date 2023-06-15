@@ -364,7 +364,18 @@ article {
     text-indent: -9999px;
   }
 }
-
+/*------------큰 모바일 텍스트 중앙 정렬---------------*/
+@media (width>=480px) {
+  .arti1-txt {
+    margin: 0 auto;
+  }
+  .arti2-txt {
+    margin: 0 auto;
+  }
+  .arti1-2-txt {
+    margin: 0 auto;
+  }
+}
 /* ----------- 태블릿 ----------- */
 
 @media (width>=1024px) {
@@ -694,4 +705,44 @@ article {
   .footer-btn {
     margin: inherit;
   }
+  .view-homebtn {
+    font-size: 1.4rem;
+  }
+  .view-btn {
+    font-size: 1.8rem;
+  }
+}
+/* 큰 PC 버튼 크기 보완 */
+@media (width>=1800px) {
+  .view-homebtn {
+    font-size: 1.6rem;
+  }
+  .view-btn {
+    font-size: 2rem;
+  }
+}
+/* 수직 */
+/*BACK TO POSITION*/
+.back-to-position {
+  opacity: 0;
+  transition-duration: 1s;
+}
+.back-to-position.to-left {
+  transform: translateX(150px);
+}
+.back-to-position.to-right {
+  transform: translateX(-150px);
+}
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+}
+.show .back-to-position.delay-1 {
+  transition-delay: 0.3s;
+}
+.show .back-to-position.delay-2 {
+  transition-delay: 0.6s;
+}
+.show .back-to-position.delay-3 {
+  transition-delay: 0.9s;
 }
