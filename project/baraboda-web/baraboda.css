@@ -224,7 +224,7 @@ article {
     margin-bottom: 10%;
   }
   .arti3-wrapper {
-    background: url(./image/arti-bg.jpg) 50% no-repeat;
+    background: url(./image/arti-bg.jpg) no-repeat 50% / cover;
     height: 100%;
   }
   .arti3-img {
