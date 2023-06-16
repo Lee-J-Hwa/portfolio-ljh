@@ -679,10 +679,10 @@ article {
   }
   figure figcaption p {
     font-size: 1vw;
-    line-height: 2;
+    line-height: 1.5;
   }
   figure figcaption h5 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
   }
   footer {
     grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
@@ -725,6 +725,9 @@ article {
   }
   .view-btn {
     font-size: 2rem;
+  }
+  figure img {
+    height: 90vh;
   }
 }
 /* 수직 */
