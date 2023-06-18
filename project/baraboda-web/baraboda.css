@@ -333,9 +333,14 @@ article {
     font-weight: 700;
     font-size: 4vw;
     margin: 1rem;
+    color: #fc5240;
   }
   figure figcaption p {
     margin-left: 1rem;
+    font-size: 3vw;
+    width: 96%;
+    font-style: italic;
+    font-weight: bold;
   }
   /*** footer ***/
   footer {
@@ -513,10 +518,15 @@ article {
   .arti4-img {
     width: 70%;
   }
-  figure figcaption {
+  figure figcaption{
     font-size: 2vw;
     line-height: 2;
+    width: 96%;
   }
+  figure figcaption p {
+    font-style: italic;
+  }
+
   /*** footer ***/
   footer {
     display: grid;
@@ -678,11 +688,14 @@ article {
     height: 76vh;
   }
   figure figcaption p {
-    font-size: 1vw;
-    line-height: 1.5;
+    font-size: 1.1vw;
+    line-height: 2;
+    width: 70%;
+    font-style: italic;
   }
   figure figcaption h5 {
     font-size: 1.2vw;
+
   }
   footer {
     grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
