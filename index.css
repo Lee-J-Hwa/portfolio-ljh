@@ -1,0 +1,36 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; /* 부드러운 스크롤 */
+}
+  /* 드래그 */
+::selection {
+    background-color: #000000;
+    color: white;
+}
+  /* 스크롤바 */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+}
+body {
+    line-height: 1.5;
+    overflow-x: hidden;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+header {
+    height: 70vh;
+}
+.gnb {
+    display: flex;
+}
+
