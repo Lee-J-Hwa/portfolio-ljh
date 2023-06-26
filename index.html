@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <!--reset-->
     <link rel="stylesheet" href="./common/style/reset.min.css">
+    <!--font-->
     <link rel="stylesheet" href="./common/style/pretendardvariable-dynamic-subset.css">
+    <!--style-->
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <header>
         <ul class="gnb">
-            <li>home</li>
-            <li>project</li>
-            <li>skill</li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">project</a></li>
+            <li><a href="#">skill</a></li>
         </ul>
         <h1>Lee Jong Hwa<br>Portfolio</h1>
-    <h2>강조할 문장</h2>
+        <h2>강조할 문장</h2>
     </header>
     <main>
-    <article>
-    <div class="arti-txt">
-    <h3>JongHwa's<br>Project</h3>
-    <p>프로젝트 이름에 마우스 커서를 올리면 이미지가 나옵니다.<br>클릭 시 해당 프로젝트 이미지로 이동합니다.</p>
-    </div>
-    <div class="arti-probox">
-    <ul>
-        <li>01 Project-1</li>
-        <li>02 Project-1</li>
-        <li>03 Project-1</li>
-        <li>04 Project-1</li>
-        <li>05 Project-1</li>
-        <li>06 Project-1</li>
-        <li>07 Project-1</li>
-    </ul>
-    </div>
-</article>
-    <article>
-    <h3>Skill＆Tool</h3>
-    <ul>
-        <li>
-            <h4>HTML5 ＆ CSS3</h4>
-            <p>Web 표준,접근성을 고려한 시멘틱 태그 활용</p>
-            <p>Position, Flex, Grid 태그를 이용한 레이아웃 구현</p>
-            <p>Media queryie를 이용한 반응형 웹 제작</p>
-        </li>
-        <li>
-            <h4>JAVAScrtipt ＆ jQuery</h4>
-            <p>JavaScript ES6+ 문법 이해</p>
-            <p>jQuery를 사용한 이벤트 구현</p>
-        </li>
-        <li>
-            <h4>Graphics</h4>
-            <p>Figma를 사용해 프로토타입 제작</p>
-            <p>Potoshop＆illustrator를 이용한 이미지 편집</p>
-        </li>
-        <li>
-            <h4>Git ＆ Github</h4>
-            <p>Github를 이용한 git파일 버전 관리</p>
-            <p>Git Bash, VSCode 사용</p>
-        </li>
-    </ul>
-    </article>
+        <article class="arti-project">
+            <div class="project-txt">
+                <h3>JongHwa's<br>Project</h3>
+                <p>프로젝트 이름에 마우스 커서를 올리면 이미지가 나옵니다.<br>클릭 시 해당 프로젝트 이미지로 이동합니다.</p>
+            </div>
+            <div class="project-list">
+                <ul>
+                    <li>01 <span class="large-txt">Project-1</span></li>
+                    <li>02 <span class="large-txt">Project-2</span></li>
+                    <li>03 <span class="large-txt">Project-3</span></li>
+                    <li class="bg-color-orange">04 <span class="large-txt K-font">바라보다</span></li>
+                    <li>05 <span class="large-txt">BARABODA</span></li>
+                    <li>06 <span class="large-txt">Team-Project</span></li>
+                    <li>07 <span class="large-txt">Project-4</span></li>
+                </ul>
+                <img src="./project/baraboda-web/image/HOME-bg.jpg" alt="바라보다 웹 페이지의 홈화면입니다.">
+            </div>
+        </article>
+        <article class="arti-skill">
+            <h3>Skill＆Tool</h3>
+            <ul class="skill">
+                <li>
+                    <h4>HTML5 ＆ CSS3</h4>
+                    <p><span class="E-font">Web</span> 표준,접근성을 고려한 시멘틱 태그 활용</p>
+                    <p><span class="E-font">Position, Flex, Grid</span> 태그를 이용한 레이아웃 구현</p>
+                    <p class="line"><span class="E-ont">Media queryie</span>를 이용한 반응형 웹 제작</p>
+                </li>
+                <li>
+                    <h4>JAVAScrtipt ＆ jQuery</h4>
+                    <p><span class="E-font">JavaScript ES6</span>+ 문법 이해</p>
+                    <p class="line"><span class="E-font">jQuery</span>를 사용한 이벤트 구현</p>
+                </li>
+                <li>
+                    <h4>Graphics</h4>
+                    <p><span class="E-font">Figma</span>를 사용해 프로토타입 제작</p>
+                    <p class="line"><span class="E-font">Potoshop＆illustrator</span>를 이용한 이미지 편집</p>
+                </li>
+                <li>
+                    <h4>Git ＆ Github</h4>
+                    <p><span class="E-font">Github</span>를 이용한 <span class="E-font">git</span>파일 버전 관리</p>
+                    <p class="line"><span class="E-font">Git Bash, VSCode</span> 사용</p>
+                </li>
+            </ul>
+        </article>
     </main>
     <footer>
         <h1>읽어주셔서<br>감사합니다<br>Thank you !</h1>
@@ -72,4 +78,5 @@
         <p>UI/UX 웹플리셔과정 수료</p>
     </footer>
 </body>
+
 </html>
