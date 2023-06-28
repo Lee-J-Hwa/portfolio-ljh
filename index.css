@@ -109,10 +109,10 @@ article {
   font-family: 'Book Antiqua', 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 .project-list img {
-  width: 30vw;
-  height: 60vh;
+  width: 36vw;
+  height: 80vh;
   position: absolute;
-  right: -700px;
+  right: -1000px;
   transform: rotate(0deg);
   transition: 0.5s;
 }
@@ -129,7 +129,7 @@ article {
   padding-bottom: 30px;
 }
 .arti-skill h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: 'Book Antiqua', 'Noto Sans', Arial, Helvetica, sans-serif;
   font-weight: bold;
   padding-top: 30px;
@@ -137,7 +137,7 @@ article {
 }
 .arti-skill h4::before {
   content: '';
-  width: 500px;
+  width: 50vw;
   background-color: #000000;
   height: 2px;
   position: absolute;
@@ -147,12 +147,12 @@ article {
   width: 60%;
 }
 .arti-skill p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Pretendard', '맑은 고딕', '돋움', sans-serif;
 }
 .arti-skill img {
   width: 40%;
-  height: 80vh;
+  height: 90vh;
   align-self: center;
 }
 .E-font {
@@ -192,7 +192,9 @@ footer a {
   color: #acacac;
   font-size: 1.1rem;
   font-family: 'Book Antiqua', 'Noto Sans', Arial, Helvetica, sans-serif;
-  border-bottom: 1px solid #acacac;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .footer-bottom {
   display: grid;
