@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <!--og-->
+    <meta property="og:title" content="portfolio">
+    <meta property="og:description" content="포트폴리오 첫 페이지입니다.">
+    <meta property="og:image" content="./image/skill.jpg">
+    <meta property="og:url" content="https://lee-j-hwa.github.io/portfolio-ljh/index.html">
+    <link href="./common/favicon/Pf_favicon.ico" rel="icon" type="image/x-icon" />
     <!--jQuery-->
     <script src="./common/style/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="./common/style/jquery-ui.min.js"></script>
@@ -22,9 +28,9 @@
 <body>
     <header>
         <ul class="gnb">
-            <li><a href="#">home</a></li>
-            <li><a href="#">project</a></li>
-            <li><a href="#">skill</a></li>
+            <li><a href="#" id="gnb-btn1">home</a></li>
+            <li><a href="#" id="gnb-btn2">project</a></li>
+            <li><a href="#" id="gnb-btn3">skill</a></li>
         </ul>
         <h1>Lee Jong Hwa<br>Portfolio</h1>
         <h2>강조할 문장</h2>
@@ -33,7 +39,7 @@
         <article class="arti-project">
             <div class="project-txt">
                 <h3>JongHwa's<br>Project</h3>
-                <p>프로젝트 이름에 마우스 커서를 올리면 이미지가 나옵니다.<br>클릭 시 해당 프로젝트 이미지로 이동합니다.</p>
+                <p>프로젝트 이름에 마우스 커서를 올리면 이미지가 나옵니다.<br>클릭 시 해당 프로젝트 페이지로 이동합니다.</p>
             </div>
             <div class="project-list">
                 <ul>
@@ -104,16 +110,18 @@
         </article>
     </main>
     <footer>
-        <h1>읽어주셔서<br>감사합니다<br><span class="E-font">Thank you !</span></h1>
-        <div class="footer-bottom">
-            <div class="footer-bottom-1">
-                <p>Tel : 010 - 7793 - 8950</p>
-                <p>E-mail : juoc00@naver.com</p>
-                <a href="https://github.com/Lee-J-Hwa">Github <span class="K-font">보러가기</span></a>
-            </div>
-            <div class="footer-bottom-2">
-                <p class="gray-color">2023.03 - 2023.08</p>
-                <p class="gray-color">UI/UX 웹플리셔과정 수료</p>
+        <div class="footer-wrapper">
+            <h1>읽어주셔서<br>감사합니다<br><span class="E-font">Thank you !</span></h1>
+            <div class="footer-bottom">
+                <div class="footer-bottom-1">
+                    <p>Tel : 010 - 7793 - 8950</p>
+                    <p>E-mail : juoc00@naver.com</p>
+                    <a href="https://github.com/Lee-J-Hwa" target="_blank">Github <span class="K-font">보러가기</span></a>
+                </div>
+                <div class="footer-bottom-2">
+                    <p class="gray-color">2023.03 - 2023.08</p>
+                    <p class="gray-color">UI/UX <span class="K-font">웹퍼블리셔과정 수료</span></p>
+                </div>
             </div>
         </div>
     </footer>

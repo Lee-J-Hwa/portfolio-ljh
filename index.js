@@ -1,3 +1,4 @@
+/* 프로젝트 리스트 이미지 슬라이드 */
 $('.project-list li')
   .eq(0)
   .on('mouseenter', () => {
@@ -69,3 +70,22 @@ $('.project-list li')
   .on('mouseleave', () => {
     $('.pro-7 img').stop().animate({ right: -1000, bottom: 0 }, 300);
   });
+/* gnb 스크롤 이동 */
+$('#gnb-btn2').on('click', (evt) => {
+  evt.preventDefault();
+  const project = $('.arti-project').offset().top;
+  console.log(project);
+  scrollTo({
+    top: 1250,
+    behavior: 'smooth',
+  });
+});
+$('#gnb-btn3').on('click', (evt) => {
+  evt.preventDefault();
+  const skill = $('.arti-skill').offset().top;
+  console.log(skill);
+  scrollTo({
+    top: 2500,
+    behavior: 'smooth',
+  });
+});
