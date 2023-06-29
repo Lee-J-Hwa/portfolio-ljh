@@ -27,6 +27,28 @@ body {
   word-break: break-all;
   overflow-wrap: break-word;
   background-color: #f7f5f4;
+  transition: 2s;
+}
+body.bg-color-blue {
+  background-color: rgb(154, 198, 255);
+}
+body.bg-color-purple {
+  background-color: rgb(240, 234, 179);
+}
+body.bg-color-gray {
+  background-color: rgb(197, 197, 197);
+}
+body.bg-color-orange {
+  background-color: rgb(255, 202, 104);
+}
+body.bg-color-green {
+  background-color: rgb(207, 253, 203);
+}
+body.bg-color-red {
+  background-color: rgb(255, 205, 205);
+}
+body.bg-color-pink {
+  background-color: rgb(255, 237, 255);
 }
 /***** header *****/
 header {
@@ -54,8 +76,18 @@ header h1 {
   font-family: 'Book Antiqua', 'Noto Sans', Arial, Helvetica, sans-serif;
   text-align: center;
   line-height: 10rem;
-  align-self: center;
   padding-top: 30vh;
+}
+.vidio-box video {
+  opacity: 0.75;
+}
+header .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 header h2 {
   font-size: 5rem;
@@ -68,7 +100,7 @@ header h2 {
 
 /**** main ****/
 main {
-  margin-top: 70vh;
+  margin-top: 90vh;
 }
 /*** project ***/
 article {
@@ -210,4 +242,9 @@ footer a {
 }
 .gray-color {
   color: #acacac;
+}
+@media (width<=1400px) {
+  main {
+    margin-top: 70vh;
+  }
 }
