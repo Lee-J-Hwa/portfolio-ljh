@@ -2,7 +2,7 @@
 $('.project-list li')
   .eq(0)
   .on('mouseenter', () => {
-    $('.pro-1 img').stop().animate({ right: 1000 }, 5000);
+    $('.pro-1 img').stop().animate({ right: 100 }, 300);
     $('body').addClass('bg-color-blue');
   });
 $('.project-list li')

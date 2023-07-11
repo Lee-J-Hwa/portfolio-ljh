@@ -95,9 +95,13 @@ header h2 {
   text-align: center;
   line-height: 10rem;
   align-self: center;
-  padding-top: 30vh;
+  padding-top: 15vh;
 }
-
+header p {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Pretendard', '맑은 고딕', '돋움', sans-serif;
+}
 /**** main ****/
 main {
   margin-top: 90vh;
