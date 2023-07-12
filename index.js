@@ -2,7 +2,7 @@
 $('.project-list li')
   .eq(0)
   .on('mouseenter', () => {
-    $('.pro-1 img').stop().animate({ right: 100 }, 300);
+    $('.pro-1 img').stop().animate({ right: 10 }, 300);
     $('body').addClass('bg-color-blue');
   });
 $('.project-list li')
@@ -14,19 +14,19 @@ $('.project-list li')
 $('.project-list li')
   .eq(1)
   .on('mouseenter', () => {
-    $('.pro-2 img').stop().animate({ right: 100 }, 300);
-    $('body').addClass('bg-color-purple');
+    $('.pro-2 img').stop().animate({ right: 10 }, 300);
+    $('body').addClass('bg-color-yellow');
   });
 $('.project-list li')
   .eq(1)
   .on('mouseleave', () => {
     $('.pro-2 img').stop().animate({ right: -1000 }, 300);
-    $('body').removeClass('bg-color-purple');
+    $('body').removeClass('bg-color-yellow');
   });
 $('.project-list li')
   .eq(2)
   .on('mouseenter', () => {
-    $('.pro-3 img').stop().animate({ right: 100 }, 300);
+    $('.pro-3 img').stop().animate({ right: 10 }, 300);
     $('body').addClass('bg-color-gray');
   });
 $('.project-list li')
@@ -39,7 +39,7 @@ $('.project-list li')
 $('.project-list li')
   .eq(3)
   .on('mouseenter', () => {
-    $('.pro-4 img').stop().animate({ right: 100 }, 300);
+    $('.pro-4 img').stop().animate({ right: 10 }, 300);
     $('body').addClass('bg-color-orange');
   });
 $('.project-list li')
@@ -51,7 +51,7 @@ $('.project-list li')
 $('.project-list li')
   .eq(4)
   .on('mouseenter', () => {
-    $('.pro-5 img').stop().animate({ right: 100, bottom: -5 }, 300);
+    $('.pro-5 img').stop().animate({ right: 10, bottom: -5 }, 300);
     $('body').addClass('bg-color-green');
   });
 $('.project-list li')
@@ -63,7 +63,7 @@ $('.project-list li')
 $('.project-list li')
   .eq(5)
   .on('mouseenter', () => {
-    $('.pro-6 img').stop().animate({ right: 100, bottom: -5 }, 300);
+    $('.pro-6 img').stop().animate({ right: 10, bottom: -5 }, 300);
     $('body').addClass('bg-color-red');
   });
 $('.project-list li')
@@ -75,7 +75,7 @@ $('.project-list li')
 $('.project-list li')
   .eq(6)
   .on('mouseenter', () => {
-    $('.pro-7 img').stop().animate({ right: 100, bottom: -5 }, 300);
+    $('.pro-7 img').stop().animate({ right: 10, bottom: -5 }, 300);
     $('body').addClass('bg-color-pink');
   });
 $('.project-list li')
@@ -103,3 +103,29 @@ $('#gnb-btn3').on('click', (evt) => {
     behavior: 'smooth',
   });
 });
+// 마우스 좌표 이벤트
+const moving = e => {
+  $('.move').css({ left: e.clientX -12.5, top: e.clientY -20 });
+}
+$(document).on('mousemove', () => {
+  $(document).on('mousemove', moving);
+  $(document).on('mouseup', () => {
+      $(document).off('mousemove', moving);
+  });
+});
+// 좌표 메뉴 이동 시
+$('.gnb li').on('mouseenter',()=> {
+  $('header').addClass('active');
+});
+$('.gnb li').on('mouseleave',()=> {
+  $('header').removeClass('active');
+});
+// footer 안에서 네브 색 변경
+$(window).on('scroll',()=>{
+  const color = $('footer').offset().top;
+   if ( scrollY > color) {
+     $('header').addClass('color-change');
+   } else {
+     $('header').removeClass('color-change');
+   }
+ });
