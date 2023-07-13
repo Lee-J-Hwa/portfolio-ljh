@@ -129,3 +129,4 @@ $(window).on('scroll',()=>{
      $('header').removeClass('color-change');
    }
  });
+ // footer 이미지
