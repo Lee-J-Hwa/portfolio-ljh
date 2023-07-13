@@ -14,10 +14,14 @@
     <!--reset-->
     <link rel="stylesheet" href="./common/style/reset.min.css">
     <!--font-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <link rel="stylesheet" href="./common/style/pretendardvariable-dynamic-subset.css">
     <!--style-->
     <link rel="stylesheet" href="./index.css">
     <!--jQuery-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./common/style/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="./common/style/jquery-ui.min.js"></script>
     <!--js-->
@@ -27,9 +31,12 @@
 </head>
 
 <body>
+    <script>
+        AOS.init(); 
+    </script>
     <header>
         <div class="vidio-box"><video src="./image/home-bg.mp4" autoplay loop muted></video>
-            <div class="move">●</div>
+            <div class="move">🔍</div>
             <ul class="gnb">
                 <li><a href="#" id="gnb-btn1">Home</a></li>
                 <li><a href="#" id="gnb-btn2">Project</a></li>
@@ -80,7 +87,7 @@
                     <li class="pro-3"><img src="./image/logo.png" alt="임시 이미지3입니다.">
                     <li class="pro-4"><img src="./project/baraboda-web/image/HOME-bg.jpg" alt="바라보다 웹 페이지의 홈화면입니다.">
                     <li class="pro-5"><img src="./project/baraboda-web/image/cafe5.jpg" alt="임시 이미지4입니다">
-                    <li class="pro-6"><img src="./project/baraboda-web/image/ARTI4-1.jpg" alt="임시 이미지5입니다">
+                    <li class="pro-6"><img src="./image/logo.png" alt="임시 이미지5입니다">
                     <li class="pro-7"><img src="./project/baraboda-web/image/ARTI4-2.jpg" alt="임시 이미지6입니다">
                     </li>
                 </ul>
@@ -108,12 +115,12 @@
                     </li>
                     <li>
                         <h4>Git ＆ Github</h4>
-                        <p><span class="E-font">Github</span>를 이용한 <span class="E-font">git</span>파일 버전 관리</p>
+                        <p><span class="E-font">Github</span>를 이용한 <span class="E-font">git </span>파일 버전 관리</p>
                         <p class="line"><span class="E-font">Git Bash, VSCode</span> 사용</p>
                     </li>
                 </ul>
             </div>
-            <img src="./image/skill.jpg" alt="공책과 컴퓨터 이미지입니다.">
+            <img src="./image/skill.jpg" alt="공책과 컴퓨터 이미지입니다." data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
         </article>
     </main>
     <footer>

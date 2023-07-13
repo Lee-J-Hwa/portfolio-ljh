@@ -6,6 +6,19 @@ html {
   scroll-behavior: smooth; /* 부드러운 스크롤 */
   -webkit-font-smoothing: antialiased;
 }
+/* 화면 크기 보정 */
+@media (width<=1400px) {
+  main {
+    margin-top: 70vh;
+  }
+}
+/* font */
+.E-font {
+  font-family: 'Book Antiqua', 'Noto Sans', Arial, Helvetica, sans-serif;
+}
+.K-font {
+  font-family: 'Pretendard', '맑은 고딕', '돋움', sans-serif;
+}
 /* 드래그 */
 ::selection {
   background-color: #000000;
@@ -31,6 +44,7 @@ body {
   background-color: #f7f5f4;
   transition: 2s;
 }
+/* 배경색 */
 body.bg-color-blue {
   background-color: rgb(154, 198, 255);
 }
@@ -182,6 +196,7 @@ article {
   transform: rotate(0deg);
   transition: 0.5s;
 }
+/* project-list_hover */
 body.bg-color-blue .project-list ul li:first-child .large-txt {
   color: #fff;
   transition: 0.5s;
@@ -249,12 +264,6 @@ body.bg-color-pink .project-list ul li:nth-child(7) .large-txt{
   height: 90vh;
   align-self: center;
 }
-.E-font {
-  font-family: 'Book Antiqua', 'Noto Sans', Arial, Helvetica, sans-serif;
-}
-.K-font {
-  font-family: 'Pretendard', '맑은 고딕', '돋움', sans-serif;
-}
 .line {
   padding-bottom: 30px;
 }
@@ -268,6 +277,7 @@ footer .footer-wrapper {
   margin: 0 auto;
 }
 footer h1 {
+  position: relative;
   font-size: 7rem;
   font-family: 'Pretendard', '맑은 고딕', '돋움', sans-serif;
   text-align: center;
@@ -276,6 +286,21 @@ footer h1 {
   font-weight: bold;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 footer p {
   color: #fff;
@@ -308,29 +333,4 @@ footer a:hover {
 }
 .gray-color {
   color: #acacac;
-}
-@media (width<=1400px) {
-  main {
-    margin-top: 70vh;
-  }
-}
-.footer-images {
-  position: absolute;
-  pointer-events: none;
-  visibility: visible;
-}
-.footer-img {
-  aspect-ratio: 0.8;
-  opacity: 0;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15vw;
-  will-change: transform;
-}
-.footer-images.active .footer-img {
-  opacity: 1;
-  z-index: 9999;
-  transform: translate3d(500px,500px,0,0);
 }
