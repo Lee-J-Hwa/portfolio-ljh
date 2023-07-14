@@ -120,6 +120,15 @@ $('.gnb li').on('mouseenter',()=> {
 $('.gnb li').on('mouseleave',()=> {
   $('header').removeClass('active');
 });
+// menu 영상 범위 밖에서 배경색 추가
+$(window).on('scroll',()=>{
+  const menu = $('header p').offset().top;
+   if ( scrollY > menu) {
+     $('header').addClass('menu-color');
+   } else {
+     $('header').removeClass('menu-color');
+   }
+ });
 // footer 안에서 네브 색 변경
 $(window).on('scroll',()=>{
   const color = $('footer').offset().top;
