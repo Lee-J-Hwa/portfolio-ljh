@@ -20,38 +20,53 @@ header .haeder-wrapper {
   height: 70px;
   margin: 0 auto;
 }
+header.color-change .haeder-wrapper h1 {
+  color: #000;
+}
+header.color-change .haeder-wrapper h1 strong {
+  color: #e6af2a;
+}
+header.color-change .haeder-wrapper .gnb {
+  color: #000;
+}
+header.color-change address {
+  border-color: #000;
+  color: #000;
+}
 header .haeder-wrapper h1 {
+  color: #fff;
   font-size: 1.875rem;
   font-weight: 400;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 header .haeder-wrapper h1 strong {
-  color: #e6af2a;
+  color: #fff;
   font-weight: 400;
   font-size: 1.875rem;
 }
 header .haeder-wrapper .gnb {
   font-weight: 700;
-  width: 50%;
+  width: 60%;
   font-size: 0.875rem;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 header .haeder-wrapper .gnb li {
   width: 20%;
   text-transform: uppercase;
 }
-header .haeder-wrapper .gnb li a:hover {
-  color: #fff;
-  margin: 0.5vw;
+header .haeder-wrapper .gnb li:first-child {
+  margin-left: 12.5%;
 }
 header address {
-  border: 1px solid black;
+  border: 1px solid #fff;
   border-radius: 15px;
   padding: 5px;
   width: 10.625rem;
   min-width: 10.625rem;
   text-align: center;
   position: relative;
+  color: #fff;
 }
 header address img {
   position: absolute;

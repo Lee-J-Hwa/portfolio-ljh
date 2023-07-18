@@ -11,7 +11,7 @@
   <meta property="og:description" content="웹사이트 연습 페이지입니다.">
   <meta property="og:type" content="website">
   <!--reset-->
-  <link rel="stylesheet" href="../../common/style/reset.webbase.css">
+  <link rel="stylesheet" href="../../common/style/reset_webbase.css">
   <!--font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,18 +20,21 @@
     rel="stylesheet">
   <!--style-->
   <link rel="stylesheet" href="./webbase.css">
+  <!--JS-->
+  <script src="../../common/style/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script defer src="./webbase.js"></script>
 </head>
 
 <body>
   <header>
     <div class="haeder-wrapper flex">
-      <h1>WEB<strong>BASE</strong></h1>
+      <h1><a href="">WEB<strong>BASE</strong></a></h1>
       <ul class="gnb flex">
-        <li><a href="">about</a></li>
-        <li><a href="">service</a></li>
-        <li><a href="">portfolio</a></li>
-        <li><a href="">clients</a></li>
-        <li><a href="">contact</a></li>
+        <li id="gnb-btn1"><a href="">about</a></li>
+        <li id="gnb-btn2"><a href="">service</a></li>
+        <li id="gnb-btn3"><a href="">portfolio</a></li>
+        <li id="gnb-btn4"><a href="">clients</a></li>
+        <li id="gnb-btn5"><a href="">contact</a></li>
       </ul>
       <address>
         <p><img src="./image/icon/phone_black.png" alt="핸드폰_이미지입니다." /> 010-8470-8947</p>
