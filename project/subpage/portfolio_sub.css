@@ -62,8 +62,191 @@ article {
     10% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0;}
 }
+.button {
+    --black: #000000;
+    --ch-black: #141414;
+    --eer-black: #1b1b1b;
+    --night-rider: #2e2e2e;
+    --white: #ffffff;
+    --af-white: #f3f3f3;
+    --ch-white: #e1e1e1;
+    border-radius: 8px;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 15px;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    transition-duration: .2s;
+    background-color: var(--ch-black);
+}
 
-/***** header *****/
+.button:before, .button:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, 
+    var(--ch-black), var(--eer-black),
+    var(--night-rider), var(--ch-white), var(--night-rider), 
+    var(--eer-black), var(--ch-black),var(--ch-black));
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+    background-position: 0 0;
+    }
+
+    50% {
+    background-position: 400% 0;
+    }
+    100% {
+    background-position: 0 0;
+    }
+  }
+  
+.button:after {
+    filter: blur(50px);
+}
+
+@media (width >= 360px) {
+    .swiper-button-prev::after,.swiper-button-next::after {
+        color: #71b3ff;
+        margin-top: -375px;
+
+    }
+    .swiper-button-prev::after {
+        margin-left: 20px;
+    }
+    .swiper-button-next::after {
+        margin-right: 20px;
+    }
+    .menu {
+        opacity: 0;
+    }
+    .home {
+        display: grid;
+    }
+    .home h1 {
+        font-size: 3rem;
+        align-self: flex-end;
+        justify-self: center;
+        margin-bottom: 50px;
+    }
+    .home h2 {
+        font-size: 2.5rem;
+        align-self: flex-start;
+        justify-self: center;
+    }
+    .list {
+        background-color: #555555;
+    }
+    .list img {
+        margin-top: 30px;
+        height: 50%;
+    }
+    .list h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+        color: #fff;
+    }
+    .list h4 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #71b3ff;
+        margin-bottom: 20px;
+    }
+    .list p {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #fff;
+    }
+    .list .button {
+        margin: 0 auto;
+    }
+    footer {
+        background-color: #000;
+    }
+    .footer-wrapper h1 {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+        overflow: hidden;
+        background: linear-gradient(90deg, #000, #fff, #000);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 3s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+    0% {
+    background-position: -500%;
+    }
+    100% {
+    background-position: 500%;
+    }
+}
+    .footer-wrapper h1 br {
+        display: none;
+    }
+    .gray-color {
+        color: #acacac;
+    }
+    footer a:hover {
+        color: #fff;
+    }
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer a {
+        color: #acacac;
+        font-size: 1.1rem;
+        font-family: 'Book Antiqua', 'Noto Sans', Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: 0.5s;
+    }
+    footer a:hover {
+        color: #fff;
+    }
+    footer .hide {
+        opacity: 0;
+    }
+}
+@media (width>=1440px) {
+    .swiper-button-prev::after,.swiper-button-next::after {
+        color: #71b3ff;
+        margin-top: 0px;
+        background-color: inherit;
+        border: none;
+        padding: 0;
+    }
+    .swiper-button-prev::after {
+        margin-left: 200px;
+    }
+    .swiper-button-next::after {
+        margin-right: 200px;
+    }
+    /***** header *****/
 header {
     width: 100%;
 }
@@ -129,15 +312,18 @@ header.color-change ul li {
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 20px;
+    text-align: left;
 }
 .txt h4 {
     font-size: 1.5rem;
     color: #71b3ff;
     margin-bottom: 40px;
+    text-align: left;
 }
 .txt p {
     color: #fff;
     font-size: 1.2rem;
+    text-align: left;
 }
 .txt .button {
     position: absolute;
@@ -151,7 +337,10 @@ footer .footer-wrapper {
     width: 90%;
     margin: 0 auto;
 }
-footer h1 {
+.footer-wrapper h1 br {
+    display: block;
+}
+footer .footer-wrapper h1 {
     position: relative;
     font-size: 7rem;
     font-family: 'Pretendard', '맑은 고딕', '돋움', sans-serif;
@@ -209,61 +398,8 @@ footer a:hover {
 .gray-color {
     color: #acacac;
 }
-.button {
-    --black: #000000;
-    --ch-black: #141414;
-    --eer-black: #1b1b1b;
-    --night-rider: #2e2e2e;
-    --white: #ffffff;
-    --af-white: #f3f3f3;
-    --ch-white: #e1e1e1;
-    border-radius: 8px;
-    width: 140px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 0px 15px;
-    border: none;
-    color: white;
-    position: relative;
-    cursor: pointer;
-    font-weight: 700;
-    transition-duration: .2s;
-    background-color: var(--ch-black);
+footer .footer-wrapper .hide {
+    display: block;
+    opacity: 1;
 }
-
-.button:before, .button:after {
-    content: '';
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    border-radius: 10px;
-    background: linear-gradient(45deg, 
-    var(--ch-black), var(--eer-black),
-    var(--night-rider), var(--ch-white), var(--night-rider), 
-    var(--eer-black), var(--ch-black),var(--ch-black));
-    background-size: 400%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    z-index: -1;
-    animation: steam 20s linear infinite;
-}
-
-@keyframes steam {
-    0% {
-    background-position: 0 0;
-    }
-
-    50% {
-    background-position: 400% 0;
-    }
-    100% {
-    background-position: 0 0;
-    }
-  }
-  
-.button:after {
-    filter: blur(50px);
 }
