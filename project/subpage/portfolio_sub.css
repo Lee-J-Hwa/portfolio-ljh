@@ -311,7 +311,7 @@ header.color-change ul li {
 .txt h3 {
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-align: left;
 }
 .txt h4 {
@@ -327,7 +327,7 @@ header.color-change ul li {
 }
 .txt .button {
     position: absolute;
-    margin-top: 20px;
+
 }
 /***** footer *****/
 footer {

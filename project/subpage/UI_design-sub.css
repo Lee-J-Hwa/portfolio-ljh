@@ -141,7 +141,6 @@ article {
     .home {
         display: grid;
         justify-content: center;
-
     }
     .home h1 {
         font-size: 3rem;
