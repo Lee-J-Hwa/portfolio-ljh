@@ -153,8 +153,7 @@ article {
     }
     /* project */
     .project {
-        display: grid;
-        
+        display: grid;      
     }
     .project h2 {
         font-size: 2.5rem;
