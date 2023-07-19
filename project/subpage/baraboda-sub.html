@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>baraboda-sub</title>
+    <!--og-->
+    <meta property="og:title" content="portfolio_sub">
+    <meta property="og:description" content="baraboda project의 설명 사이트입니다.">
+    <meta property="og:image" content="../../image/logo.png">
+    <meta property="og:url" content="">
+    <!--favicon-->
+    <link href="../../common/favicon/logo_favicon.ico" rel="icon" type="image/x-icon" />
     <!--reset-->
     <link rel="stylesheet" href="../../common/style/reset.min.css">
     <!--font-->
@@ -11,9 +18,11 @@
     <!--style-->
     <link rel="stylesheet" href="./baraboda-sub.css">
     <!--js library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="../../common/style/swiper-bundle.min.css">
     <script src="../../common/style/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="../../common/style/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../../common/style/gsap.min.js"></script>
     <script src="../../common/style/ScrollTrigger.min.js"></script>
     <script src="../../common/style/ScrollToPlugin.min.js"></script>
@@ -21,6 +30,9 @@
     <script defer src="./baraboda-sub.js"></script>
 </head>
 <body>
+    <script>
+        AOS.init(); 
+    </script>
     <header>
         <article class="home E-font event">
             <h1>바라보다 Project</h1>
@@ -34,12 +46,12 @@
     </header>
     <main>
         <article class="project">
-            <h2>Project 목표 :</h2>
-            <p class="K-font">모바일과 태블릿 환경에 맞게 보여질 수 있는 반응형 웹 제작이 목표였습니다.
+            <h2 data-aos="slide-right" data-aos-duration="1000">Project 목표 :</h2>
+            <p class="K-font" data-aos="slide-left" data-aos-offset="300" data-aos-duration="1000">모바일과 태블릿 환경에 맞게 보여질 수 있는 반응형 웹 제작이 목표였습니다.
             <br>반응형 웹 사이트가 아니였던 바라보다 카페 공식 사이트를 리디자인 하였습니다.</p>
         </article>
         <article class="list swiper-container E-font" id="slide1">
-            <h1>Style Guide</h1>
+            <h1 data-aos="flip-up" data-aos-duration="2000">Style Guide</h1>
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
                     <img src="./image/baraboda_logo.png" alt="">
@@ -82,7 +94,7 @@
             <div class="swiper-button-prev"></div>
         </article>
         <article class="skill">
-            <h1 class="E-font">Skill</h1>
+            <h1 class="E-font" data-aos="flip-up" data-aos-duration="2000">Skill</h1>
             <div class="skill-wrapper">
                 <div class="skill-box box1">
                     <h3>HTML5＆CSS3</h3>
@@ -97,15 +109,15 @@
             </div>
         </article>
         <article class="quest">
-            <h2 class="K-font">문제 및 해결 :</h2>
-            <h3 class="K-font">＊이미지 깨짐 현상</h3>
-            <p class="K-font">→ 저해상도의 이미지 문제였으며, 높은 해상도의 이미지로 교체해 해결하였습니다.</p>
-            <h3 class="K-font">＊이미지 안의 텍스트 넘침</h3>
-            <p>→ 장문의 텍스트를 이미지 안에 넣어서 생긴 문제로 텍스트를 줄이는 방법으로 해결하였습니다.</p>
+            <h2 class="K-font" data-aos="slide-right" data-aos-duration="1000">문제 및 해결 :</h2>
+            <h3 class="K-font" data-aos="slide-left" data-aos-offset="50" data-aos-duration="1000">＊이미지 깨짐 현상</h3>
+            <p class="K-font" data-aos="slide-left" data-aos-duration="1000"> → 저해상도의 이미지 문제였으며, 높은 해상도의 이미지로 교체해 해결하였습니다.</p>
+            <h3 class="K-font" data-aos="slide-left" data-aos-offset="50" data-aos-duration="1000">＊이미지 안의 텍스트 넘침</h3>
+            <p data-aos="slide-left" data-aos-duration="1000">→ 장문의 텍스트를 이미지 안에 넣어서 생긴 문제로 텍스트를 줄이는 방법으로 해결하였습니다.</p>
         </article>
         <article class="review">
-            <h2 class="E-font">Project review</h2>
-            <p>처음으로 만드는 반응형 웹이라, 레이아웃을 맞추는데 시간이 걸렸지만,
+            <h2 class="E-font" data-aos="flip-up" data-aos-duration="2000">Project review</h2>
+            <p data-aos="fade-up" data-aos-duration="2000">처음으로 만드는 반응형 웹이라, 레이아웃을 맞추는데 시간이 걸렸지만,
                 <br>간단한 구조로 디자인 해서 어렵진 않았습니다.
                 <br>스크롤 이벤트가 꼭 필요했는데, 찾아보던 중 aos라이브러리를 알게 되어
                 <br>마지막에 추가하게 됐고 만족스럽게 작업을 마쳤습니다.

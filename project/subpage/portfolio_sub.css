@@ -67,6 +67,9 @@ article {
 header {
     width: 100%;
 }
+header.color-change ul li {
+    color: #fff;
+}
 .menu {
     display: flex;
     width: 100%;
@@ -80,6 +83,7 @@ header {
 }
 .menu li {
     margin-left: 7.5%;
+    cursor: pointer;
 }
 .menu li:last-child {
     margin-right: 5%;
@@ -137,7 +141,7 @@ header {
 }
 .txt .button {
     position: absolute;
-    bottom: 0;
+    margin-top: 20px;
 }
 /***** footer *****/
 footer {

@@ -537,7 +537,7 @@ article {
         grid-column: 3/5;
         line-height: 2;
         align-self: flex-start;
-        justify-self: center;
+
     }
     .review {
         display: grid;

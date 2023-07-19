@@ -98,7 +98,7 @@ article {
     background-color: var(--ch-black);
 }
 .button:hover {
-    color: #E6AF2A;
+    color: #cc0000;
     transition: 0.5s;
 }
 .button:before, .button:after {
@@ -109,7 +109,7 @@ article {
     border-radius: 10px;
     background: linear-gradient(45deg, 
     var(--ch-black), var(--eer-black),
-    var(--night-rider), #E6AF2A, var(--night-rider), 
+    var(--night-rider), #cc0000, var(--night-rider), 
     var(--eer-black), var(--ch-black),var(--ch-black));
     background-size: 400%;
     width: calc(100% + 4px);
@@ -180,7 +180,7 @@ article {
     .list h3 {
         font-size: 2rem;
         margin: 5%;
-        color: #E6AF2A;
+        color: #cc0000;
     }
     .list img {
         margin-top: 30px;
@@ -216,7 +216,7 @@ article {
     }
     .skill .skill-box h3 {
         font-size: 2rem;
-        color: #E6AF2A;
+        color: #cc0000;
         margin-top: 5px;
         margin-bottom: 20px;
         text-indent: 30px;
@@ -236,21 +236,27 @@ article {
             font-size: 2.5rem;
             align-self: flex-end;
             font-weight: bold;
+
         }
         .quest h3 {
             font-size: 2rem;
             align-self: flex-end;
             margin-bottom: 30px;
-  
+
         }
         .quest p {
             font-size: 1rem;
             line-height: 1.5;
             align-self: flex-start;
-            justify-self: left;
+
         }
         .review {
             display: grid;
+            justify-content: center;
+        }
+        .review-box {
+            align-self: flex-start;
+            grid-template-columns: 1fr 1fr;
         }
         .review h2 {
             font-size: 2.5rem;
@@ -365,7 +371,7 @@ article {
     }
     .txt h3 {
         font-size: 2rem;
-        color: #E6AF2A;
+        color: #cc0000;
         margin-bottom: 20px;
     }
     .txt p {
@@ -463,7 +469,7 @@ article {
     }
     .txt h3 {
         font-size: 2.5rem;
-        color: #E6AF2A;
+        color: #cc0000;
         margin-bottom: 20px;
     }
     .txt p {
@@ -497,7 +503,7 @@ article {
     }
     .skill .skill-box h3 {
         font-size: 2.5rem;
-        color: #E6AF2A;
+        color: #cc0000;
         margin-top: 5px;
         margin-bottom: 20px;
         text-indent: 30px;
@@ -539,6 +545,22 @@ article {
         line-height: 2;
         align-self: flex-start;
         justify-self: center;
+    }
+    /* review */
+    .review-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+    }
+    .btn-box1 {
+        justify-self: right;
+        margin-right: 30px;
+    }
+    .btn-box1 h4{
+        text-align: center;
+    }
+    .btn-box2 {
+        margin-left: 30px;
     }
     .review {
         display: grid;

@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webbase-sub</title>
+    <!--og-->
+    <meta property="og:title" content="portfolio_sub">
+    <meta property="og:description" content="webbase project의 설명 사이트입니다.">
+    <meta property="og:image" content="../../image/logo.png">
+    <meta property="og:url" content="">
+    <!--favicon-->
+    <link href="../../common/favicon/logo_favicon.ico" rel="icon" type="image/x-icon" />
     <!--reset-->
     <link rel="stylesheet" href="../../common/style/reset.min.css">
     <!--font-->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <!--style-->
     <link rel="stylesheet" href="./webbase-sub.css">
-    <!--js library-->
-    <link rel="stylesheet" href="../../common/style/swiper-bundle.min.css">
-    <script src="../../common/style/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="../../common/style/swiper-bundle.min.js"></script>
-    <script src="../../common/style/gsap.min.js"></script>
-    <script src="../../common/style/ScrollTrigger.min.js"></script>
-    <script src="../../common/style/ScrollToPlugin.min.js"></script>
+     <!--js library-->
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+     <link rel="stylesheet" href="../../common/style/swiper-bundle.min.css">
+     <script src="../../common/style/code.jquery.com_jquery-3.7.0.min.js"></script>
+     <script src="../../common/style/swiper-bundle.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="../../common/style/gsap.min.js"></script>
+     <script src="../../common/style/ScrollTrigger.min.js"></script>
+     <script src="../../common/style/ScrollToPlugin.min.js"></script>
     <!--js-->
     <script defer src="./webbase-sub.js"></script>
 </head>
 <body>
+    <script>
+        AOS.init(); 
+    </script>
     <header>
         <article class="home E-font event">
             <h1 class="E-font">Webbase Project</h1>
@@ -34,11 +46,11 @@
     </header>
     <main>
         <article class="project">
-            <h2>Project 목표 :</h2>
-            <p class="K-font">웹 사이트를 만들기 위해 기업사이트를 리디자인 하였습니다.</p>
+            <h2 data-aos="slide-right" data-aos-duration="1000">Project 목표 :</h2>
+            <p class="K-font" data-aos="slide-left" data-aos-offset="300" data-aos-duration="1000">수업 때 배운 html과 css를 직접 적용해보며 웹 사이트를 만들기 위해 기업사이트를 리디자인 하였습니다.</p>
         </article>
         <article class="list swiper-container E-font" id="slide1">
-            <h1 class="E-font">Style Guide</h1>
+            <h1 class="E-font" data-aos="flip-up" data-aos-duration="2000">Style Guide</h1>
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
                     <img src="./image/webbase-logo.png" alt="">
@@ -80,7 +92,7 @@
             <div class="swiper-button-prev"></div>
         </article>
         <article class="skill">
-            <h1 class="E-font">Skill</h1>
+            <h1 class="E-font" data-aos="flip-up" data-aos-duration="2000">Skill</h1>
             <div class="skill-wrapper">
                 <div class="skill-box box1">
                     <h3 class="E-font">HTML5＆CSS3</h3>
@@ -94,13 +106,13 @@
             </div>
         </article>
         <article class="quest">
-            <h2 class="K-font">문제 및 해결 :</h2>
-            <h3 class="K-font">＊svg 파일 자체의 여백</h3>
-            <p class="K-font">→ svg 파일이 갖고있는 여백 때문에 텍스트와 svg 파일의 높이가 맞지 않았고, 포토샵에서 아이콘을 직접 만들어 사용하여 문제를 해결하였습니다.</p>
+            <h2 class="K-font" data-aos="slide-right" data-aos-duration="1000">문제 및 해결 :</h2>
+            <h3 class="K-font" data-aos="slide-left" data-aos-offset="50" data-aos-duration="1000">＊svg 파일 자체의 여백</h3>
+            <p class="K-font" data-aos="slide-left" data-aos-duration="1000">→ svg 파일이 갖고있는 여백 때문에 텍스트와 svg 파일의 높이가 맞지 않았고, 포토샵에서 아이콘을 직접 만들어 사용하여 문제를 해결하였습니다.</p>
         </article>
         <article class="review">
-            <h2 class="E-font">Project review</h2>
-            <p class="K-font">혼자서 처음 만든 웹사이트로, 웹사이트에 들어간 이미지와 아이콘이 많았습니다.
+            <h2 class="E-font" data-aos="flip-up" data-aos-duration="2000">Project review</h2>
+            <p class="K-font" data-aos="fade-up" data-aos-duration="2000">혼자서 처음 만든 웹사이트로, 웹사이트에 들어간 이미지와 아이콘이 많았습니다.
                 <br>웹사이트 분위기에 맞을 이미지 선정이 재밌었고,
                 <br>아이콘도 직접 만들어서 넣어서 시간은 조금 걸렸지만,
                 <br>아이콘이 잘 만들어진 거 같아 뿌듯했습니다.
