@@ -16,8 +16,12 @@ header .menu {
   display: flex;
   color: white;
   position: fixed;
-  top: 0;
+  top: 2.5%;
   right: 5%;
+  cursor: pointer;
+}
+header.color-change .menu {
+  color: #000;
 }
 header .menu li {
   font-size: 1.5rem;
@@ -74,13 +78,14 @@ header .header-txt {
 }
 .project .project-txt {
   align-self: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 /*** design ***/
 .design {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
   height: 65vh;
   border-bottom: 1px solid #999999;
 }
@@ -89,16 +94,189 @@ header .header-txt {
   justify-self: center;
   margin-right: 100px;
 }
+.design .design-txt {
+  align-self: center;
+}
 .design .design-title h2 {
   font-size: 2.5rem;
   font-weight: bold;
 }
-.text-small {
-  font-size: 1.5rem;
+.color {
+  display: flex;
 }
 .color li {
   width: 100px;
   height: 100px;
   border: 1px solid #000;
   border-radius: 50%;
+  text-align: center;   
+  border: 1px solid #000;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+.color li:first-child {
+  background-color: #FC5240;
+}
+.color li:nth-child(3) {
+  background-color: #999999;
+}
+.color li:last-child {
+  background-color: #222222;
+}
+
+.design .design-txt .color-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.design .design-txt .font-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.design .design-txt .font-inner {
+  display: flex;
+  font-size: 1.2rem;
+}
+.design .design-txt .font-inner p:first-child {
+  font-weight: bold;
+}
+.font-margin {
+  margin-right: 60px;
+}
+/*** Publishing ***/
+.publishing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  height: 65vh;
+  border-bottom: 1px solid #999999;
+}
+.publishing .publishing-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.publishing .publishing-txt {
+  align-self: center;
+  margin-left: 100px;
+}
+.publishing .publishing-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.publishing .publishing-txt {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.publishing .publishing-txt li {
+  margin-bottom: 50px;
+  list-style: disc;
+}
+.publishing .publishing-txt li p {
+  text-indent: 5px;
+}
+/*** Problem & Solution ***/
+.solution {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  height: 65vh;
+  border-bottom: 1px solid #999999;
+}
+.solution .solution-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+  text-align: right;
+}
+.solution .solution-txt {
+  align-self: center;
+  margin-left: 100px;
+}
+.solution .solution-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.solution .solution-txt {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  width: 40%;
+}
+.solution .solution-txt li {
+  margin-bottom: 50px;
+  list-style: disc;
+}
+.solution .solution-txt li h5 {
+  margin-bottom: 30px;
+}
+.solution .solution-txt li p {
+  text-indent: -25px;
+}
+.txt-light {
+  font-weight: 300;
+}
+/*** review ***/
+.review {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 65vh;
+  border-bottom: 1px solid #999999;
+}
+.review .review-title {
+  align-self: center;
+  margin-right: 100px;
+  grid-row: 1/3;
+  grid-column: 2/4;
+  
+}
+.review .review-txt {
+  align-self: center;
+  grid-row: 2/3;
+  grid-column: 2/4;
+}
+.review .review-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.review .review-txt {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.review .review-txt p {
+  width: 975px;
+}
+.review button {
+  grid-row: 3/3;
+  grid-column: 6/6;
+  margin-left: -80px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+/***** footer *****/
+footer {
+  height: 25vh;
+  width: 100%;
+  display: grid;
+}
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.prev-btn {
+  margin-left: 15%;
+}
+.next-btn {
+  margin-right: 15%;
 }

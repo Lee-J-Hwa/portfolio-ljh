@@ -71,10 +71,12 @@
         </div>
         <div class="font-box">
           <h3>Font</h3>
-          <p>Pretendard</p>
-          <p>가나다라마</p>
-          <p>ABCDEFG</p>
-          <p>123456789</p>
+          <div class="font-inner">
+            <p class="font-margin">Pretendard</p>
+            <p class="font-margin">가나다라마</p>
+            <p class="font-margin">ABCDEFG</p>
+            <p class="font-margin">123456789</p>
+          </div>
         </div>
       </div>
     </article>
@@ -101,8 +103,8 @@
     </article>
     <article class="solution">
       <div class="solution-title">
-        <h2><span class="text-small">04.</span> Problem &
- Solution</h2>
+        <h2><span class="text-small">04.</span> Problem <span class="txt-light">&</span>
+          <br>Solution</h2>
       </div>
       <div class="solution-txt">
         <ul>
@@ -117,25 +119,27 @@
         </ul>
       </div>
     </article>
-    <article>
-      <div class="solution-title">
+    <article class="review">
+      <div class="review-title">
         <h2><span class="text-small">05.</span> Review</h2>
       </div>
-      <div class="solution-txt">
+      <div class="review-txt">
         <p>처음으로 만드는 반응형 웹이라, 레이아웃을 맞추는데 시간이 걸렸지만, 간단한 구조로 디자인 해서 어렵진 않았습니다. 스크롤 이벤트가 꼭 필요했는데, 찾아보던 중 aos라이브러리를 알게 되어 마지막에 추가하게 됐고 만족스럽게 작업을 마쳤습니다.</p>
       </div>
       <button>
-        <a href="">View site</a>
+        <a href="../baraboda-web/baraboda.html">View site</a>
       </button>
     </article>
    </main>
    <footer>
-    <button>
+    <div class="btn-box">
+    <button class="prev-btn">
       <a href="">PREV</a>
     </button>
-    <button>
+    <button class="next-btn">
       <a href="">NEXT</a>
     </button>
+    </div>
    </footer>
 </body>
 </html>
