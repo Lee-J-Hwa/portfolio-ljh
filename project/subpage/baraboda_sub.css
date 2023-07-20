@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+/***** header *****/
+header {
+  background: url(../baraboda-web/image/HOME-bg.jpg)50%/cover;
+  height: 90vh;
+  width: 100%;
+  display: grid;
+}
+header .menu {
+  width: 46%;
+  justify-content: space-between;
+  display: flex;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 5%;
+}
+header .menu li {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+}
+header h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+header h2 .point-color {
+  color: #FC5240;
+}
+header h3 {
+  font-size: 1.75rem;
+  color: #fff;
+  font-weight: bold;
+}
+header h3 br {
+  display: none;
+}
+header h3 .margin {
+  margin-left: 20px;
+}
+header .header-txt {
+  align-self: flex-end;
+  margin: 100px;
+}
+/***** main *****/
+/*** project ***/
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 40vh;
+  border-bottom: 1px solid #999999;
+}
+.project .project-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.project .project-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.project .project-txt {
+  align-self: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+/*** design ***/
+.design {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 65vh;
+  border-bottom: 1px solid #999999;
+}
+.design .design-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.design .design-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.color li {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
