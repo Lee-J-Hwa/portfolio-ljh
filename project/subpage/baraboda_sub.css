@@ -27,7 +27,7 @@ header.color-change .menu {
   color: #000;
 }
 header .menu li {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-left: 20px;
   transition: 0.3s;
@@ -290,8 +290,11 @@ header h3 .margin {
 header .header-txt {
   margin: 50px;
 }
+header .menu {
+  width: 30%;
+}
 header .menu li {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 /* project */
 .project {
@@ -348,8 +351,7 @@ header {
   display: grid;
 }
 header .menu {
-  width: 46%;
-  justify-content: space-between;
+  width: 30%;
 }
 header .menu li {
   font-size: 1.5rem;
