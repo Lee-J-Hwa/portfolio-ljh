@@ -27,7 +27,7 @@ header.color-change .menu {
   color: #000;
 }
 header .menu li {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   margin-left: 20px;
   transition: 0.3s;
@@ -104,18 +104,18 @@ header h2 .point-color {
   display: flex;
 }
 .color li {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border: 1px solid #000;
   border-radius: 50%;
   text-align: center;
   border: 1px solid #000;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  line-height: 70px;
+  line-height: 60px;
   margin-top: 50px;
   margin-bottom: 30px;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 .color li:first-child {
   background-color: #FC5240;
@@ -302,7 +302,12 @@ header .menu li {
 }
 .design {
   justify-content: center;
-  margin-left: -90px;
+  }
+  .design .color li {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 1rem;
   }
 .publishing {
   justify-content: center;
