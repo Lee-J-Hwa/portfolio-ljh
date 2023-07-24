@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI-sub</title>
+    <title>UI_design_sub</title>
     <!--og-->
-    <meta property="og:title" content="portfolio_sub">
-    <meta property="og:description" content="ui_design project의 설명 사이트입니다.">
+    <meta property="og:title" content="UI_design_sub">
+    <meta property="og:description" content="UI_design project의 설명 사이트입니다.">
     <meta property="og:image" content="../../image/logo.png">
     <meta property="og:url" content="">
     <!--favicon-->
@@ -14,7 +14,7 @@
     <!--reset-->
     <link rel="stylesheet" href="../../common/style/reset.min.css">
     <!--font-->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"/>
     <!--style-->
     <link rel="stylesheet" href="./UI_design-sub.css">
     <!--js library-->
@@ -28,127 +28,203 @@
     <script src="../../common/style/ScrollToPlugin.min.js"></script>
     <!--js-->
     <script defer src="./UI_design-sub.js"></script>
-</head>
+  </head>
 <body>
-    <script>
-        AOS.init(); 
-    </script>
-    <header>
-        <article class="home E-font event">
-            <h1 class="E-font">UI design Project</h1>
-            <h2 class="E-font">Detail Site</h2>
-            <div class="scroll-downs"><p class="hide">Scroll Down</p>
-                <div class="mousey">
-                <div class="scroller"><p>↓</p></div>
-                </div>
-            </div>
-        </article>
-    </header>
-    <main>
-        <article class="project">
-            <h2 class="E-font" data-aos="slide-right" data-aos-duration="1000">UI design Project 목표 :</h2>
-            <p class="K-font" data-aos="slide-left" data-aos-offset="300" data-aos-duration="1000">
-                1. 검색을 다양한 방법으로 지원<br>
-                2. 모든 연령층이 편리하게 사용할 수 있는 UI
-            </p>
-        </article>
-        <article class="list swiper-container E-font" id="slide1">
-            <h1 class="E-font" data-aos="flip-up" data-aos-duration="2000">Style Guide</h1>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <img src="./image/UI_design-logo.png" alt="">
-                    <div class="txt">
-                        <h3 class="E-font">Logo</h3>
-                        <p>두꺼우면서 잘 보일 수 있는
-                            <br class="E-font">UNPEOPLE Gothic UNI 폰트를 
-                            <br>사용하였습니다.</p>
-                            <button class="button E-font">
-                                <a href="./image/UI_design-style.pdf">>View more</a>
-                            </button>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./image/UI_design-color.png" alt="">
-                    <div class="txt">
-                        <h3 class="E-font">Color</h3>
-                        <p>포인트 컬러 선정에서 남색과 초록색 중 고민하였습니다.
-                            <br>초록색이 식물 앱에 잘 어울려서
-                            <br>#03C75A 색상을 최종 선택하였습니다.</p>
-                            <button class="button E-font">
-                                <a href="./image/UI_design-style.pdf">>View more</a>
-                            </button>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./image/UI_design-font.png" alt="">
-                    <div class="txt">
-                        <h3 class="E-font">Font</h3>
-                        <p>제목과 소제목은 Montserrat 폰트를 사용하고
-                            <br>내용은 깔끔한 Noto sans 폰트를 사용하였습니다.</p>
-                        <button class="button E-font">
-                            <a href="./image/UI_design-style.pdf">View more</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </article>
-        <article class="skill">
-            <h1 class="E-font" data-aos="flip-up" data-aos-duration="2000">Skill</h1>
-            <div class="skill-wrapper">
-                <div class="skill-box box2">
-                    <h3 class="E-font">Graphics</h3>
-                    <p>피그마 사용하여 로고 제작
-                        <br>사용 설명 부분의 이미지 일러스트레이터로 작업
-                        <br>포토샵 활용하여 이미지 편집</p>
-                </div>
-            </div>
-        </article>
-        <article class="quest">
-            <h2 data-aos="slide-right" data-aos-duration="1000">문제 및 해결 : </h2>
-            <h3 data-aos="slide-left" data-aos-offset="50" data-aos-duration="1000">＊버튼의 색 대비</h3>
-            <p data-aos="slide-left" data-aos-duration="1000">→ 색 대비가 맞지 않아 사용자의 눈에 잘 안 보일 수 있는 문제가 생겼습니다.
-                <br>텍스트 색을 흰색에서 검은색으로 변경하여 해결하였습니다.</p>
-        </article>
-        <article class="review">
-            <h2 class="E-font" data-aos="flip-up" data-aos-duration="2000">Project review</h2>
-            <p data-aos="fade-up" data-aos-duration="2000">팀 프로젝트를 시작할 때 디자인에 대해 잘 몰라서 
-                <br>팀에 도움을 많이 못 주었지만, 팀원의 작업하는 방법과
-                <br>정보 검색을 통해 알아보며, 디자인 하는 방법에 대해 
-                <br>알 수 있게된 시간이었습니다.
-            </p>
-            <div class="review-box">
-                <div class="btn-box1">
-                    <h4>프로토타입 보러가기</h4>
-                    <button class="button E-font">
-                    <a href="./image/UI_design-prototype.pdf">View more</a>
-                    </button>
-                </div>
-                <div class="btn-box2">
-                    <h4>완료보고서 보러가기</h4>
-                    <button class="button E-font">
-                        <a href="./image/UI_design-project.pdf">View more</a>
-                    </button>
-                </but>
-            </div>
-        </article>
-    </main>
-    <footer>
-        <div class="footer-wrapper">
-            <h1>읽어주셔서<br>감사합니다<br><span class="E-font">Thank you !</span></h1>
-            <div class="footer-bottom">
-                <div class="footer-bottom-1">
-                    <p class="gray-color">Tel : 010 - 7793 - 8950</p>
-                    <p class="gray-color">E-mail : juoc00@naver.com</p>
-                </div>
-                <a href="https://github.com/Lee-J-Hwa" target="_blank"><span class="under">Github <span class="K-font">보러가기</span></a>
-                <div class="footer-bottom-2 hide">
-                    <p class="gray-color">2023.03 - 2023.08</p>
-                    <p class="gray-color">UI/UX <span class="K-font">웹퍼블리셔과정 수료</span></p>
-                </div>
-            </div>
+  <header>
+    <ul class="gnb">
+      <li><a href="../../index.html" id="gnb-btn1">Home</a></li>
+      <li><a href="../../index.html#project" id="gnb-btn2">Project</a></li>
+      <li><a href="../../index.html#skill" id="gnb-btn3">Skill</a></li>
+    </ul>
+    <div class="home-title">
+      <ul class="title-box">
+        <li><img src="./image/book.png" alt="식물도감의 캐릭터 사진이며, 작은 버전입니다."></li>
+        <li><img src="./image/UI_design-logo.png" alt="식물도감의 로고입니다."></li>
+        <li><h2>Mobile App Redesign</h2></li>
+        <li><h3># Team Project<br><span class="margin">#UI/UX Design</span></h3></li>
+      </ul>
+    </div>
+    <div class="home-bg">
+      <img src="./image/home-bg.png" alt="식물도감 어플이 켜져있는 핸드폰 사진입니다.">
+    </div>
+  </header>
+  <main>
+    <article class="project">
+      <div class="project-title">
+        <h2><span class="text-small">01.</span> Project</h2>
+      </div>
+      <div class="project-txt">
+        <ul>
+          <li>
+            <h4>App 이름</h4>
+            <p>: 식물도감</p>
+          </li>
+          <li>
+            <h4>App 소개</h4>
+            <p>: 산림청 국립수목원에서 제공하는 식물의 정보를 찾아볼 수 있는 식물도감 어플입니다.</p>
+          </li>
+          <li>
+            <h4>선정 이유</h4>
+            <p> : 코로나 이후 식물에 대한 수요가 늘고 있는데 국내의 식물 관련한 대표적인 어플이 없으며, 해외 어플은 번역 문제가 있어, 식물 관련 어플에 개선이 필요하다고 생각하게 됐습니다. 관련 어플을 찾던 중, 디자인이 단순했던 “식물도감” 어플을 선정하게 되었습니다. </p>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article class="problem">
+      <div class="problem-title">
+        <h2><span class="text-small">02.</span> 기존 App 문제점</h2>
+      </div>
+      <div class="problem-txt">
+        <ul>
+          <li>
+            <img src="./image/problem-1.png" alt="기존 식물도감 어플의 검색화면입니다.">
+            <img src="./image/problem-2.png" alt="기존 식물도감 어플의 스크롤 화면입니다.">
+          </li>
+          <li>
+            <h4>사용이 불편한 디자인</h4>
+            <p>→ 검색을 할 때 자동완성 기능을 지원하지 않고 있으며,
+              찾을 때 가나다 순의 세로 스크롤을 내려야 식물을
+              볼 수 있었습니다.</p>
+          </li>
+          <li>
+            <h4>식물 검색 기능만 지원</h4>
+            <p>→ 사진 검색이나 즐겨찾기 등의 다양한 기능을
+              지원하는 다른 어플에 비해 기능이 부족했습니다.</p>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article class="">
+      <div class="problem-title">
+        <h2><span class="text-small">03.</span> 진행과정</h2>
+      </div>
+      <div>
+        <p>어플 선정 → 경쟁앱 선정,자료 조사 → 무드보드+ 임시 메인 화면 제작
+          <br>→ UI/UX 방향 설계 → 정보구조도 작성 → 와이어프레임 작성 →
+          <br>프로토타입 작성 → 최종완성 및 발표 → 완료보고서 작성</p>
+      </div>
+    </article>
+    <article class="work">
+      <div class="work-title">
+        <h2><span class="text-small">04.</span> 담당업무</h2>
+      </div>
+      <div class="work-txt">
+        <ul>
+          <li>자료 조사</li>
+          <li>로고 제작</li>
+          <li>일러스트레이터 작업</li>
+          <li>찜콩 목록 (즐겨찾기 페이지) 디자인</li>
+          <li>스타일 가이드 작성</li>
+        </ul>
+      </div>
+    </article>
+    <article class="ui_ux">
+      <div class="ui_ux-title">
+        <h2><span class="text-small">05.</span> UI/UX 방향</h2>
+      </div>
+      <div class="ui_ux-txt">
+        <ul>
+          <li>
+            <h4>검색 기능 다양화</h4>
+            <p>: 여러 검색 기능을 지원하여 편의성 증가를 목표했습니다.</p>
+          </li>
+          <li>
+            <h4>즐겨찾기 기능 추가</h4>
+            <p>: 즐겨찾기 기능을 추가해 나만의 식물도감을 가지고 싶어하는
+              사용자의 니즈를 충족시킬 수 있도록 했습니다.</p>
+          </li>
+          <li>
+            <h4>전 연령층에서 사용이 편리한 UI/UX</h4>
+            <p>: 처음 정보 수집 단게에서 주 연령층을 어디로 할 지 고민했습니다.<br>
+              여러 정보 기사와 네이버 검색 트렌드 등을 참고한 결과, 식물도감에     
+              대한 검색량이 20~40대보다 50~70대가 더 높게 나왔으며 모든 연    
+              령층이 비슷하게 집계되어 직관적인 UI 디자인을 가질 수 있도록 신
+              경썼습니다.</p>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article class="design">
+      <div class="design-title">
+        <h2><span class="text-small">06.</span> Styleguide</h2>
+      </div>
+      <div class="design-txt">
+        <div class="logo-box">
+          <h3>logo</h3>
+          <img src="" alt="식물도감의 로고입니다.">
         </div>
-    </footer>
+        <div class="color-box">
+          <h3>Color</h3>
+          <ul class="color">
+            <li>FFFFFF</li>
+            <li>D9D9D9</li>
+            <li>000000</li>
+            <li>03C75A</li>
+          </ul>
+        </div>
+        <div class="font-box">
+          <h3>Font</h3>
+          <div class="font-inner">
+            <p class="font-margin">Montserrat</p>
+            <p class="font-margin">가나다라마</p>
+            <p class="font-margin">ABCDEFG</p>
+            <p class="font-margin">123456789</p>
+          </div>
+          <div class="font-inner">
+            <p class="font-margin">Noto sans</p>
+            <p class="font-margin">가나다라마</p>
+            <p class="font-margin">ABCDEFG</p>
+            <p class="font-margin">123456789</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="prototype">
+      <div class="prototype-top">
+        <h2><span class="text-small">07.</span> prototype</h2>
+        <img src="./image/prototype-1.png" alt="리디자인된 식물도감의 메인화면 입니다.">
+        <img src="./image/prototype-2.png" alt="리디자인된 식물도감의 검색 화면입니다.">
+        <img src="./image/prototype-3.png" alt="리디자인된 식물도감의 이미지 검색 화면입니다.">
+        <img src="./image/prototype-4.png" alt="리디자인된 식물도감의 로딩 화면입니다.">
+      </div>
+      <div class="prototype-bottom">
+        <img src="./image/prototype-5.png" alt="리디자인된 식물도감의 검색 결과 화면입니다.">
+        <img src="./image/prototype-6.png" alt="리디자인된 식물도감의 자세한 식물 정보 화면입니다.">
+        <img src="./image/prototype-7.png" alt="리디자인된 식물도감의 식물 정보 화면에서 즐겨찾기 추가 버튼을 눌렀을 때 화면입니다.">
+        <img src="./image/prototype-8.png" alt="리디자인된 식물도감의 즐겨찾기 페이지 화면입니다.">
+        <button class="view-btn">
+          <a href="./image/UI_design-prototype.pdf">View more</a>
+        </button>
+      </div>
+    </article>
+    <article class="review">
+      <div class="review-title">
+        <h2><span class="text-small">08.</span> 결과 Review</h2>
+      </div>
+      <div class="review-txt">
+        <p>우리 팀은 조장 역할을 맡아주신 분이 전에 디자인 분야의 일을 해보셨던 분이라 전체적으로 큰 어려움 없이 잘 진행이 되었던 거 같습니다.<br>
+          역할 분담을 할 때 자신이 없었던 일러스트레이터 작업을 맡게 돼서 부담이 있었지만, 팀원분들의 조언과 격려 덕분에 작업을 잘 마무리 할 수 있었습니다.<br>
+          팀원분들의 작업하는 방법과 UI/UX 디자인에 대한 정보를 검색해 알아보며, 디자인 하는 방법에 대해 알 수 있게된 시간이었습니다.</p>
+      </div>
+      <div class="review-button">
+        <button class="prev-btn">
+          <a href="./image/UI_design.pdf">발표자료</a>
+        </button>
+        <button class="prev-btn">
+          <a href="./image/UI_design-project.pdf">완료보고서</a>
+        </button>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div class="btn-box">
+      <button class="prev-btn">
+        <a href="">PREV</a>
+      </button>
+      <button class="next-btn">
+        <a href="">NEXT</a>
+      </button>
+      </div>
+  </footer>
 </body>
 </html>
