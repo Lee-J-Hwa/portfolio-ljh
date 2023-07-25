@@ -226,15 +226,13 @@ article {
   font-family: 'Book Antiqua', 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 .project-list img {
-  width: 36vw;
-  height: 80vh;
   position: absolute;
   right: -1000px;
   transform: rotate(0deg);
   transition: 0.5s;
 }
 /* project-list_hover */
-body.bg-color-blue .project-list ul li:first-child .large-txt {
+body.bg-color-orange .project-list ul li:first-child .large-txt {
   color: #fff;
   transition: 0.5s;
 }
@@ -242,15 +240,15 @@ body.bg-color-yellow .project-list ul li:nth-child(2) .large-txt{
   color: #fff;
   transition: 0.5s;
 }
-body.bg-color-gray .project-list ul li:nth-child(3) .large-txt{
+body.bg-color-green .project-list ul li:nth-child(3) .large-txt{
   color: #fff;
   transition: 0.5s;
 }
-body.bg-color-orange .project-list ul li:nth-child(4) .large-txt{
+body.bg-color-blue .project-list ul li:nth-child(4) .large-txt{
   color: #fff;
   transition: 0.5s;
 }
-body.bg-color-green .project-list ul li:nth-child(5) .large-txt{
+body.bg-color-gray .project-list ul li:nth-child(5) .large-txt{
   color: #fff;
   transition: 0.5s;
 }

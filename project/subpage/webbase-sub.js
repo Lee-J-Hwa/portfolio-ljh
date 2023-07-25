@@ -1,11 +1,9 @@
-// 스와이퍼
-const mySwiper = new Swiper('#slide1', {
-    loop: true,
-    autoplay: {
-    delay: 10000,
-    },  
-    navigation: {
-        nextEl: '.swiper-button-next', 
-        prevEl: '.swiper-button-prev',
-    }
-});
+// home 화면 밖에서 menu 색 변경
+$(window).on('scroll',()=>{
+  const menu = $('.project').offset().top;
+   if ( scrollY > menu) {
+     $('header').addClass('color-change');
+   } else {
+     $('header').removeClass('color-change');
+   }
+ });

@@ -95,7 +95,7 @@ header .home-title h3 {
   margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 65vh;
+  height: 70vh;
   border-bottom: 1px solid #999999;
 }
 .project .project-title {
@@ -122,7 +122,7 @@ header .home-title h3 {
 .project .project-txt ul li h4 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 .project .project-txt ul li {
   margin: 50px;
@@ -159,6 +159,7 @@ header .home-title h3 {
 .problem .problem-txt .problem-imgbox {
   display: flex;
   list-style: none;
+  margin-top: 40px;
 }
 .problem .problem-txt ul {
   list-style-type: disc;
@@ -174,7 +175,7 @@ header .home-title h3 {
 .problem .problem-txt ul li h4 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .problem .problem-txt ul li p {
   font-size: 1.2rem;
@@ -184,7 +185,7 @@ header .home-title h3 {
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 65vh;
+  height: 40vh;
   border-bottom: 1px solid #999999;
 }
 .list .list-title {
@@ -210,7 +211,7 @@ header .home-title h3 {
 .work {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 65vh;
+  height: 45vh;
   border-bottom: 1px solid #999999;
 }
 .work .work-title {
@@ -239,7 +240,7 @@ header .home-title h3 {
 .ui_ux {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 70vh;
+  height: 80vh;
   border-bottom: 1px solid #999999;
 }
 .ui_ux .ui_ux-title {
@@ -265,7 +266,7 @@ header .home-title h3 {
 .ui_ux .ui_ux-txt ul li h4 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .ui_ux .ui_ux-txt ul li p {
   font-size: 1.2rem;
@@ -281,7 +282,7 @@ header .home-title h3 {
 .design {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  height: 90vh;
   border-bottom: 1px solid #999999;
 }
 .design .design-title {
@@ -301,7 +302,6 @@ header .home-title h3 {
   font-size: 1.2rem;
   line-height: 2;
   width: 100%;
-  margin-top: 50px;
   margin-left: 40px;
 }
 .logo-box h3 {
@@ -375,7 +375,8 @@ header .home-title h3 {
   font-weight: bold;
   width: 70%;
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
+  margin: 15px;
 }
 .text-small {
   font-size: 1.5rem;
@@ -405,7 +406,7 @@ figcaption {
 
 /*** review ***/
 .review {
-  margin-top: 100px;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 65vh;

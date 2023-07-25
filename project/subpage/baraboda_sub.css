@@ -11,26 +11,47 @@ header {
   height: 60vh;
   display: grid;
 }
-header .menu {
-  justify-content: space-between;
-  display: flex;
-  color: white;
-  position: fixed;
-  top: 2.5%;
-  right: 5%;
-  cursor: pointer;
-}
-header .menu li:hover {
-  color: #FC5240;
-}
-header.color-change .menu {
+header.color-change .gnb {
   color: #000;
 }
-header .menu li {
+header.color-change .gnb li:hover {
+  border-bottom: 2px solid #000000;
+}
+.gnb {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
   font-size: 1.2rem;
-  font-weight: bold;
-  margin-left: 20px;
-  transition: 0.3s;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 60px;
+  color: #fff;
+}
+header.menu-color .gnb {
+  background-color: rgba(000, 000, 000, 0.95);
+  color: #000;
+}
+.gnb li {
+  margin-left: 7.5%;
+}
+.gnb li:last-child {
+  margin-right: 5%;
+}
+.gnb li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  transition: 0.5s;
+}
+header.menu-color .gnb li::after {
+  background-color: #000;
+}
+.gnb li:hover::after {
+  width: 100%;
 }
 header h1 {
   font-size: 2rem;

@@ -1,143 +1,138 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webbase-sub</title>
-    <!--og-->
-    <meta property="og:title" content="portfolio_sub">
-    <meta property="og:description" content="webbase project의 설명 사이트입니다.">
-    <meta property="og:image" content="../../image/logo.png">
-    <meta property="og:url" content="">
-    <!--favicon-->
-    <link href="../../common/favicon/logo_favicon.ico" rel="icon" type="image/x-icon" />
-    <!--reset-->
-    <link rel="stylesheet" href="../../common/style/reset.min.css">
-    <!--font-->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
-    <!--style-->
-    <link rel="stylesheet" href="./webbase-sub.css">
-     <!--js library-->
-     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-     <link rel="stylesheet" href="../../common/style/swiper-bundle.min.css">
-     <script src="../../common/style/code.jquery.com_jquery-3.7.0.min.js"></script>
-     <script src="../../common/style/swiper-bundle.min.js"></script>
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script src="../../common/style/gsap.min.js"></script>
-     <script src="../../common/style/ScrollTrigger.min.js"></script>
-     <script src="../../common/style/ScrollToPlugin.min.js"></script>
-    <!--js-->
-    <script defer src="./webbase-sub.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>baraboda_sub</title>
+  <!--og-->
+  <meta property="og:title" content="webbase_sub">
+  <meta property="og:description" content="webbase project의 설명 사이트입니다.">
+  <meta property="og:image" content="../../image/logo.png">
+  <meta property="og:url" content="">
+  <!--favicon-->
+  <link href="../../common/favicon/logo_favicon.ico" rel="icon" type="image/x-icon" />
+  <!--reset-->
+  <link rel="stylesheet" href="../../common/style/reset.min.css">
+  <!--font-->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+  <!--style-->
+  <link rel="stylesheet" href="./webbase-sub.css">
+  <!--js library-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="../../common/style/swiper-bundle.min.css">
+  <script src="../../common/style/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="../../common/style/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../../common/style/gsap.min.js"></script>
+  <script src="../../common/style/ScrollTrigger.min.js"></script>
+  <script src="../../common/style/ScrollToPlugin.min.js"></script>
+  <!--js-->
+  <script defer src="./webbase-sub.js"></script>
 </head>
 <body>
-    <script>
-        AOS.init(); 
-    </script>
-    <header>
-        <article class="home E-font event">
-            <h1 class="E-font">Webbase Project</h1>
-            <h2 class="E-font">Detail Site</h2>
-            <div class="scroll-downs"><p class="hide">Scroll Down</p>
-                <div class="mousey">
-                <div class="scroller"><p>↓</p></div>
-                </div>
-            </div>
-        </article>
-    </header>
-    <main>
-        <article class="project">
-            <h2 class="E-font" data-aos="slide-right" data-aos-duration="1000">Project 목표 :</h2>
-            <p class="K-font" data-aos="slide-left" data-aos-offset="300" data-aos-duration="1000">수업 때 배운 html과 css를 직접 적용해보며 웹 사이트를 만들기 위해 기업사이트를 리디자인 하였습니다.</p>
-        </article>
-        <article class="list swiper-container E-font" id="slide1">
-            <h1 class="E-font" data-aos="flip-up" data-aos-duration="2000">Style Guide</h1>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <img src="./image/webbase-logo.png" alt="">
-                    <div class="txt">
-                        <h3 class="E-font">Logo</h3>
-                        <p class="K-font">웹베이스 회사의 로고입니다.
-                            <br>웹베이스의 포인트 컬러가 들어간 로고와
-                            <br>상단 홈 화면 전용 흰색 로고가 있습니다.</p>
-                            <button class="button E-font">
-                                <a href="./image/webbase-style.pdf">View more</a>
-                            </button>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./image/webbase-color.png" alt="">
-                    <div class="txt">
-                        <h3 class="E-font">Color</h3>
-                        <p class="K-font">흰색을 메인컬러로 깔끔한 느낌을 주었으며,
-                            <br>사용한 이미지도 흰색을 메인으로 
-                            <br>하는 이미지만 사용하였습니다.</p>
-                            <button class="button E-font">
-                                <a href="./image/webbase-style.pdf">View more</a>
-                            </button>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./image/webbase-font.png" alt="">
-                    <div class="txt">
-                        <h3 class="E-font">Font</h3>
-                        <p class="K-font">제목엔 Montsseret 서체를 사용하고
-                            <br>내용은 Roboto 서체를 사용하였습니다.</p>
-                        <button class="button E-font">
-                            <a href="./image/webbase-style.pdf">View more</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </article>
-        <article class="skill">
-            <h1 class="E-font" data-aos="flip-up" data-aos-duration="2000">Skill</h1>
-            <div class="skill-wrapper">
-                <div class="skill-box box1">
-                    <h3 class="E-font">HTML5＆CSS3</h3>
-                    <p class="K-font">웹표준,접근성을 고려한 시멘틱 마크업
-                        <br>flex＆grid 태그를 사용한 레이아웃</p>
-                </div>
-                <div class="skill-box box2">
-                    <h3 class="E-font">Graphics</h3>
-                    <p class="K-font">포토샵을 활용하여 웹사이트에 들어갈 이미지 편집과 아이콘 제작</p>
-                </div>
-            </div>
-        </article>
-        <article class="quest">
-            <h2 class="K-font" data-aos="slide-right" data-aos-duration="1000">문제 및 해결 :</h2>
-            <h3 class="K-font" data-aos="slide-left" data-aos-offset="50" data-aos-duration="1000">＊svg 파일 자체의 여백</h3>
-            <p class="K-font" data-aos="slide-left" data-aos-duration="1000">→ svg 파일이 갖고있는 여백 때문에 텍스트와 svg 파일의 높이가 맞지 않았고, 포토샵에서 아이콘을 직접 만들어 사용하여 문제를 해결하였습니다.</p>
-        </article>
-        <article class="review">
-            <h2 class="E-font" data-aos="flip-up" data-aos-duration="2000">Project review</h2>
-            <p class="K-font" data-aos="fade-up" data-aos-duration="2000">혼자서 처음 만든 웹사이트로, 웹사이트에 들어간 이미지와 아이콘이 많았습니다.
-                <br>웹사이트 분위기에 맞을 이미지 선정이 재밌었고,
-                <br>아이콘도 직접 만들어서 넣어서 시간은 조금 걸렸지만,
-                <br>아이콘이 잘 만들어진 거 같아 뿌듯했습니다.
-            </p>
-            <h4 class="K-font">웹사이트 보러가기</h4>
-            <button class="button E-font">
-                <a href="../webbase-web/webbase.html">View more</a>
-            </button>
-        </article>
-    </main>
-    <footer>
-        <div class="footer-wrapper">
-            <h1>읽어주셔서<br>감사합니다<br><span class="E-font">Thank you !</span></h1>
-            <div class="footer-bottom">
-                <div class="footer-bottom-1">
-                    <p class="gray-color">Tel : 010 - 7793 - 8950</p>
-                    <p class="gray-color">E-mail : juoc00@naver.com</p>
-                </div>
-                <a href="https://github.com/Lee-J-Hwa" target="_blank"><span class="under">Github <span class="K-font">보러가기</span></a>
-                <div class="footer-bottom-2 hide">
-                    <p class="gray-color">2023.03 - 2023.08</p>
-                    <p class="gray-color">UI/UX <span class="K-font">웹퍼블리셔과정 수료</span></p>
-                </div>
-            </div>
+   <header>
+    <ul class="gnb">
+      <li><a href="../../index.html" id="gnb-btn1">Home</a></li>
+      <li><a href="../../index.html#project" id="gnb-btn2">Project</a></li>
+      <li><a href="../../index.html#skill" id="gnb-btn3">Skill</a></li>
+    </ul>
+    <div class="header-txt">
+      <h1>Webbase</h1>
+      <h2><span class="point-color">Web</span>base website</h2>
+      <h3># PC Web
+        <br><span class="margin"># Java Script</span></h3>
+    </div> 
+   </header>
+   <main>
+    <article class="project">
+      <div class="project-title">
+        <h2><span class="text-small">01.</span> Project</h2>
+      </div>
+      <div class="project-txt">
+        <p>수업 때 배운 html과 css를 직접 적용해보며 웹 사이트를 만들기 위해 기업사이트를 리디자인 하였습니다.</p>
+      </div>
+    </article>
+    <article class="design">
+      <div class="design-title">
+        <h2><span class="text-small">02.</span> Design</h2>
+      </div>
+      <div class="design-txt">
+        <div class="color-box">
+          <h3>Color</h3>
+          <ul class="color">
+            <li>E6AF2A</li>
+            <li>FFFFFF</li>
+            <li>999999</li>
+            <li>222222</li>
+          </ul>
         </div>
-    </footer>
+        <div class="font-box">
+          <h3>Font</h3>
+          <div class="font-inner">
+            <p class="font-margin">Noto sans</p>
+            <p class="font-margin">가나다라마</p>
+            <p class="font-margin">ABCDEFG</p>
+            <p class="font-margin">123456789</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="publishing">
+      <div class="publishing-title">
+        <h2><span class="text-small">03.</span> Publishing</h2>
+      </div>
+      <div class="publishing-txt">
+      <ul>
+        <li>
+          <h5>java script를 활용해 Scroll Event 구현</h5>
+          <p>(logo color 변경)</p>
+        </li>
+        <li>
+          <h5>flex, grid 를 이용한 웹페이지 레이아웃 제작</h5>
+        </li>
+        <li>
+          <h5>포토샵을 활용하여 웹사이트에 들어갈 이미지 편집과 아이콘 제작</h5>
+        </li>
+      </ul>
+      </div>
+    </article>
+    <article class="solution">
+      <div class="solution-title">
+        <h2><span class="text-small">04.</span> Problem <span class="txt-light">&</span>
+          <br>Solution</h2>
+      </div>
+      <div class="solution-txt">
+        <ul>
+          <li>
+            <h5>SVG 파일 자체의 여백</h5>
+            <p>→ svg 파일이 갖고있는 여백 때문에 텍스트와 svg 파일의 높이가 
+              맞지 않았고, 포토샵에서 아이콘을 직접 만들어 사용하여 문제
+              를 해결하였습니다.</p>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article class="review">
+      <div class="review-title">
+        <h2><span class="text-small">05.</span> Review</h2>
+      </div>
+      <div class="review-txt">
+        <p>웹사이트에 들어간 이미지와 아이콘이 많았습니다.웹사이트 분위기에 맞을 이미지 선정이 재밌었고,아이콘도 직접 만들어서 넣어서 시간은 조금 걸렸지만,아이콘이 잘 만들어진 거 같아 뿌듯했습니다.</p>
+      </div>
+      <button>
+        <a href="../webbase-web/webbase.html" target="_blank">View site</a>
+      </button>
+    </article>
+   </main>
+   <footer>
+    <div class="btn-box">
+    <button class="prev-btn">
+      <a href="./baraboda_sub.html">PREV</a>
+    </button>
+    <button class="next-btn">
+      <a href="./UI_design-sub.html">NEXT</a>
+    </button>
+    </div>
+   </footer>
 </body>
 </html>
