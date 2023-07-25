@@ -232,15 +232,23 @@ article {
   transition: 0.5s;
 }
 /* project-list_hover */
-body.bg-color-orange .project-list ul li:first-child .large-txt {
+body.bg-color-green .project-list ul li:first-child .large-txt {
   color: #fff;
   transition: 0.5s;
 }
-body.bg-color-yellow .project-list ul li:nth-child(2) .large-txt{
+body.bg-color-green .project-list ul li:first-child .hover-color {
   color: #fff;
   transition: 0.5s;
 }
-body.bg-color-green .project-list ul li:nth-child(3) .large-txt{
+.hover-color {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+body.bg-color-gray .project-list ul li:nth-child(2) .large-txt{
+  color: #fff;
+  transition: 0.5s;
+}
+body.bg-color-orange .project-list ul li:nth-child(3) .large-txt{
   color: #fff;
   transition: 0.5s;
 }
@@ -248,7 +256,7 @@ body.bg-color-blue .project-list ul li:nth-child(4) .large-txt{
   color: #fff;
   transition: 0.5s;
 }
-body.bg-color-gray .project-list ul li:nth-child(5) .large-txt{
+body.bg-color-yellow .project-list ul li:nth-child(5) .large-txt{
   color: #fff;
   transition: 0.5s;
 }

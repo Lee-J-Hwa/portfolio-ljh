@@ -3,37 +3,37 @@ $('.project-list li')
   .eq(0)
   .on('mouseenter', () => {
     $('.pro-1 img').stop().animate({ right: 10 }, 300);
-    $('body').addClass('bg-color-orange');
+    $('body').addClass('bg-color-green');
   });
 $('.project-list li')
   .eq(0)
   .on('mouseleave', () => {
     $('.pro-1 img').stop().animate({ right: -1000 }, 300);
-    $('body').removeClass('bg-color-orange');
+    $('body').removeClass('bg-color-green');
   });
 $('.project-list li')
   .eq(1)
   .on('mouseenter', () => {
     $('.pro-2 img').stop().animate({ right: 10 }, 300);
-    $('body').addClass('bg-color-yellow');
+    $('body').addClass('bg-color-gray');
   });
 $('.project-list li')
   .eq(1)
   .on('mouseleave', () => {
     $('.pro-2 img').stop().animate({ right: -1000 }, 300);
-    $('body').removeClass('bg-color-yellow');
+    $('body').removeClass('bg-color-gray');
   });
 $('.project-list li')
   .eq(2)
   .on('mouseenter', () => {
     $('.pro-3 img').stop().animate({ right: 10 }, 300);
-    $('body').addClass('bg-color-green');
+    $('body').addClass('bg-color-orange');
   });
 $('.project-list li')
   .eq(2)
   .on('mouseleave', () => {
     $('.pro-3 img').stop().animate({ right: -1000 }, 300);
-    $('body').removeClass('bg-color-green');
+    $('body').removeClass('bg-color-orange');
   });
 
 $('.project-list li')
@@ -52,13 +52,13 @@ $('.project-list li')
   .eq(4)
   .on('mouseenter', () => {
     $('.pro-5 img').stop().animate({ right: 10, bottom: -5 }, 300);
-    $('body').addClass('bg-color-gray');
+    $('body').addClass('bg-color-yellow');
   });
 $('.project-list li')
   .eq(4)
   .on('mouseleave', () => {
     $('.pro-5 img').stop().animate({ right: -1000, bottom: 0 }, 300);
-    $('body').removeClass('bg-color-gray');
+    $('body').removeClass('bg-color-yellow');
   });
 $('.project-list li')
   .eq(5)
