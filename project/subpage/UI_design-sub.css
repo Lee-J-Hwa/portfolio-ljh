@@ -53,17 +53,415 @@ header {
   height: 100vh;
   display: grid;
   width: 100%;
+  grid-template-columns: 1fr 1fr;
 }
 header .home-title {
-
+  width: 64.5%;
+  align-self: center;
+  justify-self: right;
+}
+header .home-bg {
+  width: 80%;
+  align-self: center;
+  justify-self: left;
 }
 header .home-title .title-box li:first-child img{
-  width: 5%;
+  width: 10%;
+  margin-bottom: 30px;
 }
 header .home-title .title-box li:nth-child(2) img {
-  width: 15%;
+  width: 50%;
 }
 header .home-title h3 .margin {
   margin-left: 20px;
 }
+header .home-title h3 br {
+  display: none;
+}
+header .home-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+header .home-title h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #03C75A;
+}
 /***** main *****/
+/*** project ***/
+.project {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 65vh;
+  border-bottom: 1px solid #999999;
+}
+.project .project-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.project .project-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.project .project-txt {
+  align-self: center;
+  font-size: 1rem;
+  line-height: 2;
+  width: 70%;
+}
+.project .project-txt ul {
+  list-style-type: disc;
+}
+.project .project-txt ul li h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.project .project-txt ul li {
+  margin: 50px;
+}
+/*** problem ***/
+.problem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  border-bottom: 1px solid #999999;
+}
+.problem .problem-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.problem .problem-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.problem .problem-txt {
+  align-self: center;
+  font-size: 1rem;
+  line-height: 2;
+  width: 70%;
+}
+.problem .problem-txt img {
+  width: 40%;
+  margin: 20px;
+}
+.problem .problem-txt .problem-imgbox {
+  display: flex;
+  list-style: none;
+}
+.problem .problem-txt ul {
+  list-style-type: disc;
+}
+.problem .problem-txt ul li {
+  margin-bottom: 40px;
+}
+
+.problem .problem-txt ul li:nth-child(2),.problem .problem-txt ul li:nth-child(3) {
+  margin-left: 40px;
+  width: 60%;
+}
+.problem .problem-txt ul li h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.problem .problem-txt ul li p {
+  font-size: 1.2rem;
+  text-indent: -20px;
+}
+/*** list ***/
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 65vh;
+  border-bottom: 1px solid #999999;
+}
+.list .list-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.list .list-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.list .list-txt {
+  justify-self: center;
+  align-self: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  width: 90%;
+}
+/*** work ***/
+.work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 65vh;
+  border-bottom: 1px solid #999999;
+}
+.work .work-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.work .work-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.work .work-txt {
+  justify-self: center;
+  align-self: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  width: 90%;
+}
+.work .work-txt ul {
+  list-style: disc;
+}
+/*** ui_ux ***/
+.ui_ux {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 70vh;
+  border-bottom: 1px solid #999999;
+}
+.ui_ux .ui_ux-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.ui_ux .ui_ux-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.ui_ux .ui_ux-txt {
+  align-self: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  width: 51%;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.ui_ux .ui_ux-txt ul li h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.ui_ux .ui_ux-txt ul li p {
+  font-size: 1.2rem;
+  text-indent: -10px;
+}
+.ui_ux .ui_ux-txt ul {
+  list-style-type: disc;
+}
+.ui_ux .ui_ux-txt ul li {
+  margin-bottom: 40px;
+}
+/*** design ***/
+.design {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  border-bottom: 1px solid #999999;
+}
+.design .design-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.design .design-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.design .design-txt {
+  align-self: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.logo-box h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.logo-box img {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  width: 20%;
+}
+.color {
+  display: flex;
+}
+.color li {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;   
+  border: 1px solid #000;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+.color li:nth-child(2) {
+  background-color: #d9d9d9;
+}
+.color li:nth-child(3) {
+  background-color: #000000;
+  color: #fff;
+}
+.color li:last-child {
+  background-color: #03C75A;
+  color: #fff;
+}
+.design .design-txt .font-box {
+  display: block;
+}
+.design .design-txt .color-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.design .design-txt .font-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.design .design-txt .font-inner {
+  display: flex;
+  font-size: 1.2rem;
+}
+.design .design-txt .font-inner p:first-child {
+  font-weight: bold;
+}
+.font-margin {
+  margin-right: 60px;
+}
+/*** prototype ***/
+.prototype {
+  display: grid;
+  height: 200vh;
+  border-bottom: 1px solid #999999;
+}
+.prototype h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 70%;
+  justify-self: center;
+  align-self: center;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.prototype-top,.prototype-bottom {
+  display: flex;
+  width: 72%;
+  justify-self: center;
+  align-self: flex-start;
+}
+.prototype-top img,.prototype-bottom img {
+  width: 100%;
+}
+.prototype-top figure,.prototype-bottom figure {
+  margin: 20px;
+}
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+.view-btn {
+  justify-self: right;
+  margin-right: 15%;
+}
+
+/*** review ***/
+.review {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 65vh;
+  border-bottom: 1px solid #999999;
+}
+.review .review-title {
+  align-self: center;
+  justify-self: center;
+  margin-right: 100px;
+}
+.review .review-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-small {
+  font-size: 1.5rem;
+}
+.review .review-txt {
+  align-self: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  width: 70%;
+  margin: 50px;
+}
+.review-button {
+  margin-right: 7.5%;
+  display: flex;
+  justify-content: center;
+  grid-column: 2/2;
+}
+/***** footer *****/
+footer {
+  height: 25vh;
+  width: 100%;
+  display: grid;
+}
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.prev-btn {
+  margin-left: 15%;
+}
+.next-btn {
+  margin-right: 15%;
+}
+button {
+  width: 100px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  color: #03C75A;
+  transition: 0.3s;
+}
