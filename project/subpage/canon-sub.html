@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>canon-sub</title>
+    <title>UI_design_sub</title>
     <!--og-->
-    <meta property="og:title" content="portfolio_sub">
-    <meta property="og:description" content="team project의 설명 사이트입니다.">
+    <meta property="og:title" content="canon_sub">
+    <meta property="og:description" content="canon team project의 설명 사이트입니다.">
     <meta property="og:image" content="../../image/logo.png">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://lee-j-hwa.github.io/portfolio-ljh/project/subpage/UI_canon-sub.html">
+    <meta property="og:type" content="website">
     <!--favicon-->
     <link href="../../common/favicon/logo_favicon.ico" rel="icon" type="image/x-icon" />
     <!--reset-->
     <link rel="stylesheet" href="../../common/style/reset.min.css">
     <!--font-->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"/>
     <!--style-->
-    <link rel="stylesheet" href="./canon-sub.css">
+    <link rel="stylesheet" href="./UI_canon-sub.css">
     <!--js library-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="../../common/style/swiper-bundle.min.css">
@@ -27,130 +28,5 @@
     <script src="../../common/style/ScrollTrigger.min.js"></script>
     <script src="../../common/style/ScrollToPlugin.min.js"></script>
     <!--js-->
-    <script defer src="./canon-sub.js"></script>
-</head>
-<body>
-    <script>
-        AOS.init(); 
-    </script>
-    <header>
-        <article class="home E-font event">
-            <h1 class="E-font">Team Project</h1>
-            <h2 class="E-font">Detail Site</h2>
-            <div class="scroll-downs"><p class="hide">Scroll Down</p>
-                <div class="mousey">
-                <div class="scroller"><p>↓</p></div>
-                </div>
-            </div>
-        </article>
-    </header>
-    <main>
-        <article class="project">
-            <h2 data-aos="slide-right" data-aos-duration="1000">Team Project 목표 :</h2>
-            <p class="K-font" data-aos="slide-left" data-aos-offset="300" data-aos-duration="1000">JavaScript를 활용한 웹사이트를 만들어보는 것이 목표였습니다.
-                <br>팀 의견에 따라 canon 공식 사이트를 리디자인 하게 되었습니다.</p>
-        </article>
-        <article class="list swiper-container E-font" id="slide1">
-            <h1 class="E-font" data-aos="flip-up" data-aos-duration="2000">Style Guide</h1>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <img src="./image/canon-logo.png" alt="">
-                    <div class="txt">
-                        <h3 class="E-font">Logo</h3>
-                        <p class="K-font">캐논 회사의 로고입니다.
-                            <br>흰색이 아닌 버전의 로고도 있었지만,
-                            <br>작업한 메인 사이트엔 사용되지 않았습니다.</p>
-                            <button class="button E-font">
-                                <a href="./image/canon-style.pdf">View more</a>
-                            </button>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./image/canon-color.png" alt="">
-                    <div class="txt">
-                        <h3 class="E-font">Color</h3>
-                        <p class="K-font">검은색을 메인컬러로 깔끔하고 세련된 느낌으로
-                            <br>잘 디자인 된 거 같습니다</p>
-                            <button class="button E-font">
-                                <a href="./image/canon-style.pdf">View more</a>
-                            </button>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./image/canon-font.png" alt="">
-                    <div class="txt">
-                        <h3 class="E-font">Font</h3>
-                        <p class="K-font">영문은 NeueMontreal 폰트를 사용하고,
-                            <br>한글은 Noto sans KR 폰트를 사용했습니다.</p>
-                        <button class="button E-font">
-                            <a href="./image/canon-style.pdf">View more</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </article>
-        <article class="skill">
-            <h1 class="E-font" data-aos="flip-up" data-aos-duration="2000">Skill</h1>
-            <div class="skill-wrapper">
-                <div class="skill-box box1">
-                    <h3 class="E-font">HTML5＆CSS3</h3>
-                    <p class="K-font">웹표준,접근성을 고려한 시멘틱 마크업
-                        <br>flex＆grid 태그를 사용한 레이아웃
-                        <br>@keyframes와 animation을 이용한 효과 구현</p>
-                </div>
-                <div class="skill-box box2">
-                    <h3 class="E-font">JavaScript</h3>
-                    <p class="K-font">로고의 크기가 변화하는 스크롤 이벤트
-                        <br>스와이퍼 라이브러리를 활용한 슬라이드 구현</p>
-                </div>
-            </div>
-        </article>
-        <article class="quest">
-            <h2 class="K-font" data-aos="slide-right" data-aos-duration="1000">문제 및 해결 :</h2>
-            <h3 class="K-font" data-aos="slide-left" data-aos-offset="50" data-aos-duration="1000">＊로고 이미지 깨짐 문제</h3>
-            <p class="K-font" data-aos="slide-left" data-aos-duration="1000">→ 스크롤 이벤트로 로고 크기가 늘어나고 줄어들면서 이미지가 깨지는 문제가 생겼고, SVG 파일로 교체해서 해결했습니다.</p>
-        </article>
-        <article class="review">
-            <h2 class="E-font" data-aos="flip-up" data-aos-duration="2000">Project review</h2>
-            <p class="K-font" data-aos="fade-up" data-aos-duration="2000">이번 작업은 자바스크립트가 많이 들어가야 했습니다.
-                <br>부족한 자바스크립트 이해로 처음 구상했던 사이트와는 
-                <br>다른 모습으로 완성되어 아쉬움이 남지만,
-                <br>자바스크립트를 배울 수 있는 좋은 기회가 되었습니다.
-            </p>
-            <div class="review-box">
-                <div class="btn-box1">
-                    <h4 class="K-font">웹사이트 보러가기</h4>
-                    <button class="button E-font">
-                        <a href="https://codingnoyes.github.io/cono/index.html">View more</a>
-                    </button>
-                </div>
-
-                <div class="btn-box2">
-                    <h4 class="K-font">완료보고서 보러가기</h4>
-                    <button class="button E-font">
-                    <a href="./image/canon-style.pdf">View more</a>
-                    </button>
-                </div>
-            </div>
-        </article>
-    </main>
-    <footer>
-        <div class="footer-wrapper">
-            <h1>읽어주셔서<br>감사합니다<br><span class="E-font">Thank you !</span></h1>
-            <div class="footer-bottom">
-                <div class="footer-bottom-1">
-                    <p class="gray-color">Tel : 010 - 7793 - 8950</p>
-                    <p class="gray-color">E-mail : juoc00@naver.com</p>
-                </div>
-                <a href="https://github.com/Lee-J-Hwa" target="_blank"><span class="under">Github <span class="K-font">보러가기</span></a>
-                <div class="footer-bottom-2 hide">
-                    <p class="gray-color">2023.03 - 2023.08</p>
-                    <p class="gray-color">UI/UX <span class="K-font">웹퍼블리셔과정 수료</span></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    <script defer src="./UI_canon-sub.js"></script>
+  </head>
