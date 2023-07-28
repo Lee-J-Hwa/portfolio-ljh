@@ -14,9 +14,6 @@ header {
 header.color-change .gnb {
   color: #000;
 }
-header.color-change .gnb li:hover {
-  border-bottom: 2px solid #000000;
-}
 .gnb {
   display: flex;
   width: 100%;
@@ -29,10 +26,7 @@ header.color-change .gnb li:hover {
   height: 60px;
   color: #fff;
 }
-header.menu-color .gnb {
-  background-color: rgba(000, 000, 000, 0.95);
-  color: #000;
-}
+
 .gnb li {
   margin-left: 7.5%;
 }
@@ -47,7 +41,7 @@ header.menu-color .gnb {
   display: block;
   transition: 0.5s;
 }
-header.menu-color .gnb li::after {
+header.color-change .gnb li::after {
   background-color: #000;
 }
 .gnb li:hover::after {
