@@ -9,7 +9,7 @@ body {
 }
 /***** header *****/
 header {
-  background: url(./image/main-background.png)70%/cover;
+  background: url(./image/canon-main-background.png)70%/cover;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
